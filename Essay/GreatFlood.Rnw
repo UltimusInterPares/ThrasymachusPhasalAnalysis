@@ -1,0 +1,19 @@
+\documentclass[noraggedright]{turabian-researchpaper}
+
+\usepackage{turabian-formatting}
+
+\title{This Great Flood of Words\thanks{Rep. 1: 344d1}}
+\subtitle{A Brief Phasal Analysis of the Dialogue between Socrates and Thrasymachus}
+\author{Thomas Broadwater}
+\course{GREK 8010: Readings and Research in Greek Literature}
+\submissioninfo{}
+\date{\today}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\input{Sections/Methodology.Rnw}
+
+\end{document}
