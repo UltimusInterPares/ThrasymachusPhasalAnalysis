@@ -2,6 +2,8 @@
 
 \usepackage{turabian-formatting}
 
+\usepackage[T1]{fontenc}
+
 \title{This Great Flood of Words\thanks{Rep. 1: 344d1}}
 \subtitle{A Brief Phasal Analysis of the Dialogue between Socrates and Thrasymachus}
 \author{Thomas Broadwater}
@@ -12,8 +14,71 @@
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 
+<<echo = F>>=
+library(tidyverse) #Tidy data
+library(tidytext) #Text mining (unnest tokens)
+library(stringr) #Text manipulation
+library(dplyr) #Data manipulation
+library(readxl) #Importing .xml's
+library(janitor) #Cleaning data frames
+library(textdata) #Access the AFINN sentiment dictionary
+@
+
+
 \maketitle
 
-\input{Sections/Methodology.Rnw}
+<<echo = F>>=
+# Import the Raw Data Set
+nested_dialogue <- read_excel("/Users/thomasbroadwater/Documents/UGA/Classes/Spring22/Plato/PhasalAnalysis/ThrasymachusPhasalAnalysis/SocVsThrasEx.xlsx", sheet = "Typology ") %>%
+  as_tibble() %>%
+  clean_names()
+
+# Prepare for data analysis: one-token-per-row format
+# Include the column "index" for easier re-organization down the line
+unnested_dialogue <- nested_dialogue %>%
+  unnest_tokens(word, text)
+unnested_dialogue <- unnested_dialogue %>%
+  add_column(index = c(1:nrow(unnested_dialogue)),
+             .before = "start_page")
+
+# Color blind-safe palette to be used later
+cbPalette <- c("#999999", "#E69F00", "#F0E442", "#009E73", "#56B4E9", "#0072B2", "#D55E00", "#CC79A7")
+@
+
+<<echo = F, fig = T>>=
+### SENTIMENTS -----------------------------------------------------------------
+
+# Generate AFINN Sentiment Analysis
+# Re-index to maintain order later on
+republic_afinn <- unnested_dialogue %>%
+  inner_join(get_sentiments("afinn"))
+republic_afinn$index <- c(1:nrow(republic_afinn))
+
+sentence_sentiment <- republic_afinn %>%
+  ggplot(mapping = aes(x=index, y=value, fill=speaker)) +
+  scale_fill_manual(values=cbPalette) +
+  geom_bar(stat = "identity") +
+  theme(axis.text.x=element_text(angle=90)) +
+  xlab("Sentence") +
+  ylab("Sentiment") +
+  theme_classic()
+
+# Global Sentiment
+global_sentiment <- republic_afinn %>%
+  ggplot(mapping = aes(x=reorder(turn,index), y=value, fill=speaker)) +
+  scale_fill_manual(values=cbPalette) +
+  geom_bar(stat = "identity") +
+  geom_hline(aes(yintercept=mean(value)), color="blue", size=.5) +
+  geom_hline(aes(yintercept=0), size=.5) +
+  #theme(axis.text.x=element_text(angle=90)) +
+  theme(axis.text.x=element_blank(),
+         axis.ticks.x=element_blank()) +
+  xlab("Turn") +
+  ylab("Sentiment")  
+
+print(global_sentiment)
+@
+
+
 
 \end{document}

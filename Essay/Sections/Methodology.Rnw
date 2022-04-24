@@ -1,3 +1,6 @@
 \section{Methodology}
 
+<<>>=
+source("Scripts/importing.R")
+@
 
