@@ -11,14 +11,23 @@ library(textdata) #Access the AFINN sentiment dictionary
 
 ### Functions ------------------------------------------------------------------
 # mode: used in gathering initial data
-mode = function(input){
-  return(sort(-table(input))[1])
-}
+# mode = function(input){
+#   return(sort(-table(input))[1])
+# }
+# 
+# find_mode <- function(x) {
+#   u <- unique(x)
+#   tab <- tabulate(match(x, u))
+#   u[tab == max(tab)]
+# }
 
 find_mode <- function(x) {
   u <- unique(x)
   tab <- tabulate(match(x, u))
-  u[tab == max(tab)]
+  
+  if (length(u[tab == max(tab)]) > 1) {NA}
+  else {u[tab == max(tab)]}
+  
 }
 
 ### IMPORTING DATA -------------------------------------------------------------

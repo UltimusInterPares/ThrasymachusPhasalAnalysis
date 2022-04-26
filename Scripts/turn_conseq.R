@@ -21,7 +21,7 @@ thrasymachus_conseq <- republic_turn_conseq %>%
   filter(str_detect(speaker, "Thrasymachus") == T)
 
 # Generate table from data
-lot <- tibble(
+dot <- tibble(
   speaker = c("global", "cleitophon", "glaucon", "polemarchus", "socrates", "thrasymacus"),
   mean = c(mean(republic_turn_conseq$n),
                 mean(cleitophon_conseq$n),
@@ -67,22 +67,22 @@ turn_conseq <- republic_turn_conseq %>%
 
 # Quick p-values of means
 for (i in c(2:6)) {
-  val <- t.test(c(lot$mean[1], lot$mean[i]))$p.value
-  paste(lot$speaker[i], val, sep = ": ") %>%
+  val <- t.test(c(dot$mean[1], dot$mean[i]))$p.value
+  paste(dot$speaker[i], val, sep = ": ") %>%
     print()
 }
 
 # Quick p-values of standard deviations
 for (i in c(2:6)) {
-  val <- t.test(c(lot$sd[1], lot$sd[i]))$p.value
-  paste(lot$speaker[i], val, sep = ": ") %>%
+  val <- t.test(c(dot$sd[1], dot$sd[i]))$p.value
+  paste(dot$speaker[i], val, sep = ": ") %>%
     print()
 }
 
 # P values for each turn.
 conseq_p <- c()
 for (i in c(1:nrow(republic_turn_conseq))) {
-  conseq_p[i] <- t.test(c(lot$mean[1], republic_turn_conseq$n[i]))$p.value
+  conseq_p[i] <- t.test(c(dot$mean[1], republic_turn_conseq$n[i]))$p.value
 }
 
 republic_turn_conseq_p <- republic_turn_conseq %>%

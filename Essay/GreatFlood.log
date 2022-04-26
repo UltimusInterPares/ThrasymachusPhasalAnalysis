@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.9.5)  26 APR 2022 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.9.5)  26 APR 2022 15:44
 entering extended mode
 **./GreatFlood.tex
 (GreatFlood.tex
@@ -1203,7 +1203,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [5]
-<GreatFlood-Turn_Conseq.pdf, id=29, 433.62pt x 433.62pt>
+<GreatFlood-Turn_Conseq.pdf, id=30, 433.62pt x 433.62pt>
 File: GreatFlood-Turn_Conseq.pdf Graphic file (type pdf)
 <use GreatFlood-Turn_Conseq.pdf>
 Package pdftex.def Info: GreatFlood-Turn_Conseq.pdf  used on input line 123.
@@ -1238,11 +1238,13 @@ ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
 s/type1/public/amsfonts/cm/cmr10.pfb></Users/thomasbroadwater/Library/Applicati
 on Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Use
 rs/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
-e1/public/amsfonts/cm/cmtt12.pfb></Users/thomasbroadwater/Library/Application S
-upport/MiKTeX/texmfs/install/fonts/type1/public/cbgreek/grmn1200.pfb>
-Output written on GreatFlood.pdf (9 pages, 129524 bytes).
+e1/public/amsfonts/cm/cmr8.pfb></Users/thomasbroadwater/Library/Application Sup
+port/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb></Users/th
+omasbroadwater/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
+blic/cbgreek/grmn1200.pfb>
+Output written on GreatFlood.pdf (9 pages, 138160 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  54282 words of extra memory for PDF output out of 61914 (max. 10000000)
 

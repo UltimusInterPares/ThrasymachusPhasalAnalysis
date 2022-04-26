@@ -115,7 +115,7 @@ thrasymachus_conseq <- republic_turn_conseq %>%
   filter(str_detect(speaker, "Thrasymachus") == T)
 
 # Generate table from data
-lot <- tibble(
+dot <- tibble(
   speaker = c("global", "cleitophon", "glaucon", "polemarchus", "socrates", "thrasymacus"),
   mean = c(mean(republic_turn_conseq$n),
                 mean(cleitophon_conseq$n),
@@ -173,16 +173,16 @@ represents the middle value when organized. The standard deviation represents
 the overall variation within the data. The table is printed below.
 
 \begin{table}
-<<LOT, echo = F>>=
-print(lot)
+<<dot, echo = F>>=
+print(dot)
 @
 \caption{Turn Density Data}
 \label{tab:DensityData}
 \end{table}
 
 The table shows notably regular results. Each speaker's average sentence
-density is close to the global, $\bar{x}_g = 1.68$. Cleitophon and Socrates
-deviate the most, $\bar{x}_c = 1.33$ and $\bar{x}_s = 1.99$, respectively, but
+density is close to the global, $P_{\bar{x}g} = 1.68$. Cleitophon and Socrates
+deviate the most, $P_{\bar{x}c} = 1.33$ and $P_{\bar{x}s} = 1.99$, respectively, but
 the variations are slight, making it difficult to tell what difference is
 significant. The script performs a t-test comparing the global mean to each
 speaker's to solve this problem. This test will return a figure called a
@@ -193,8 +193,8 @@ are significantly different. The results of the test are printed below.
 \begin{table}
 <<T Test (Avg), echo = F>>=
 for (i in c(2:6)) {
-  val <- t.test(c(lot$mean[1], lot$mean[i]))$p.value
-  paste(lot$speaker[i], val, sep = ": ") %>%
+  val <- t.test(c(dot$mean[1], dot$mean[i]))$p.value
+  paste(dot$speaker[i], val, sep = ": ") %>%
     print()
   }
 @
@@ -227,7 +227,7 @@ sentence density. However, Socrates and Thrasymachus both show greater variation
 than the others, especially in the early half of the text. 
 This variation is measured by the standard deviations above. A similar t-test on
 them reveals that both have a significantly high range of sentence densities:
-$\sigma_s = 0.02$ and $\sigma_t = 0.01$ (both rounded), respectively. These
+$P_{\sigma s} = 0.02$ and $P_{\sigma t} = 0.01$ (both rounded), respectively. These
 p-values imply that significantly denser turns than the average should be
 considered when defining phases.
 
@@ -235,13 +235,16 @@ considered when defining phases.
 <<T Test (SD), echo = F>>=
 # Quick p-values of standard deviations
 for (i in c(2:6)) {
-  val <- t.test(c(lot$sd[1], lot$sd[i]))$p.value
-  paste(lot$speaker[i], val, sep = ": ") %>%
+  val <- t.test(c(dot$sd[1], dot$sd[i]))$p.value
+  paste(dot$speaker[i], val, sep = ": ") %>%
     print()
 }
 @
 \caption{P-Values: Standard Deviation of Turn Density by Speaker}
 \label{tab:SDPval}
 \end{table}
+
+\section{Words per Turn (Turn Length)}
+
 
 \end{document}

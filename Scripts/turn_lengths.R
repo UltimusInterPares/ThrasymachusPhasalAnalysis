@@ -34,47 +34,33 @@ socrates_length <- republic_turn_length %>%
 thrasymachus_length <- republic_turn_length %>%
   filter(str_detect(speaker, "Thrasymachus") == T)
 
-# Generate table from data
 lot <- tibble(
-  global = c(
-    mean(republic_turn_length$length_words),
-    median(republic_turn_length$length_words),
-    mode(republic_turn_length$length_words),
-    sd(republic_turn_length$length_words)
-  ),
-  cleitophon = c(
-    mean(cleitophon_length$length_words),
-    median(cleitophon_length$length_words),
-    mode(cleitophon_length$length_words),
-    sd(cleitophon_length$length_words)
-  ),
-  glaucon = c(
-    mean(glaucon_length$length_words),
-    median(glaucon_length$length_words),
-    mode(glaucon_length$length_words),
-    sd(glaucon_length$length_words)
-  ),
-  polemarchus = c(
-    mean(polemarchus_length$length_words),
-    median(polemarchus_length$length_words),
-    mode(polemarchus_length$length_words),
-    sd(polemarchus_length$length_words)
-  ),
-  socrates = c(
-    mean(socrates_length$length_words),
-    median(socrates_length$length_words),
-    mode(socrates_length$length_words),
-    sd(socrates_length$length_words)
-  ),
-  thrasymachus = c(
-    mean(thrasymachus_length$length_words),
-    median(thrasymachus_length$length_words),
-    mode(thrasymachus_length$length_words),
-    sd(thrasymachus_length$length_words)
-  )
-) # Length of Turns
-
-row.names(lot) <- c("mean", "median", "mode", "s.d.")
+  speaker = c("global", "cleitophon", "glaucon", "polemarchus", "socrates", "thrasymacus"),
+  mean = c(mean(republic_turn_length$length_words),
+           mean(cleitophon_length$length_words),
+           mean(glaucon_length$length_words),
+           mean(polemarchus_length$length_words),
+           mean(socrates_length$length_words),
+           mean(thrasymachus_length$length_words)),
+  median = c(median(republic_turn_length$length_words),
+             median(cleitophon_length$length_words),
+             median(glaucon_length$length_words),
+             median(polemarchus_length$length_words),
+             median(socrates_length$length_words),
+             median(thrasymachus_length$length_words)),
+  mode = c(find_mode(republic_turn_length$length_words),
+           find_mode(cleitophon_length$length_words),
+           find_mode(glaucon_length$length_words),
+           find_mode(polemarchus_length$length_words),
+           find_mode(socrates_length$length_words),
+           find_mode(thrasymachus_length$length_words)),
+  sd = c(sd(republic_turn_length$length_words),
+         sd(cleitophon_length$length_words),
+         sd(glaucon_length$length_words),
+         sd(polemarchus_length$length_words),
+         sd(socrates_length$length_words),
+         sd(thrasymachus_length$length_words))
+)
 
 rm(cleitophon_length,
    glaucon_length,
