@@ -1,6 +1,6 @@
 ### IMPORTING DATA -------------------------------------------------------------
 # Import the Raw Data Set
-nested_dialogue <- read_excel("SocVsThrasEx.xlsx", sheet = "Typology - Σωκράτης κατὰ Θρασυμ") %>%
+nested_dialogue <- read_excel("SocVsThrasEx.xlsx", sheet = "Typology ") %>%
   as_tibble() %>%
   clean_names()
 

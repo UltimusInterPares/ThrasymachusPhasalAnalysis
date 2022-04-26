@@ -26,14 +26,6 @@ global_sentiment <- republic_afinn %>%
   xlab("Turn") +
   ylab("Sentiment")  
 
-republic_afinn %>%
-  filter(str_detect(speaker, "(Socrates|Thrasymachus)") == T) %>%
-  ggplot(aes(reorder(turn, index), value, fill = speaker)) +
-  scale_fill_manual(values=cbPalette[c(4,5)]) +
-  geom_col(show.legend = FALSE) +
-  geom_smooth(aes(y=value), se = FALSE, show.legend = FALSE) +
-  facet_wrap(~speaker, nrow = 2, scales = "fixed")
-
 turn_sentiment_box <- republic_afinn %>%
   filter(str_detect(speaker, "(Socrates|Thrasymachus)") == T) %>%
   ggplot(aes(reorder(turn, index), value, color = speaker)) +

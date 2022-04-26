@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.9.5)  24 APR 2022 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.9.5)  26 APR 2022 15:22
 entering extended mode
 **./GreatFlood.tex
 (GreatFlood.tex
@@ -62,25 +62,774 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 \tf@ssectafterskip=\skip51
 )
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
-/latex/base/fontenc.sty"
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)
-(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Sweave.sty
-Package: Sweave 
+/latex/biblatex-chicago/biblatex-chicago.sty"
+Package: biblatex-chicago 2021/06/30 v 3.16 biblatex style
 
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
-/latex/base/ifthen.sty"
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+/latex/hyperref/nameref.sty"
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/refcount/refcount.sty"
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/generic/ltxcmds/ltxcmds.sty"
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
-/latex/graphics/graphicx.sty"
-Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+/generic/infwarerr/infwarerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+))
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/generic/gettitlestring/gettitlestring.sty"
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/kvoptions/kvoptions.sty"
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /latex/graphics/keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/generic/kvsetkeys/kvsetkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)))
+\c@section@level=\count192
+LaTeX Info: Redefining \ref on input line 356.
+LaTeX Info: Redefining \pageref on input line 356.
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/xstring/xstring.sty"
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/generic/xstring/xstring.tex"
+\integerpart=\count193
+\decimalpart=\count194
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex/biblatex.sty"
+Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/generic/pdftexcmds/pdftexcmds.sty"
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/generic/iftex/iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/logreq/logreq.sty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count195
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/logreq/logreq.def"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/base/ifthen.sty"
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/url/url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count196
+\c@listtotal=\count197
+\c@listcount=\count198
+\c@liststart=\count199
+\c@liststop=\count266
+\c@citecount=\count267
+\c@citetotal=\count268
+\c@multicitecount=\count269
+\c@multicitetotal=\count270
+\c@instcount=\count271
+\c@maxnames=\count272
+\c@minnames=\count273
+\c@maxitems=\count274
+\c@minitems=\count275
+\c@citecounter=\count276
+\c@maxcitecounter=\count277
+\c@savedcitecounter=\count278
+\c@uniquelist=\count279
+\c@uniquename=\count280
+\c@refsection=\count281
+\c@refsegment=\count282
+\c@maxextratitle=\count283
+\c@maxextratitleyear=\count284
+\c@maxextraname=\count285
+\c@maxextradate=\count286
+\c@maxextraalpha=\count287
+\c@abbrvpenalty=\count288
+\c@highnamepenalty=\count289
+\c@lownamepenalty=\count290
+\c@maxparens=\count291
+\c@parenlevel=\count292
+\blx@tempcnta=\count293
+\blx@tempcntb=\count294
+\blx@tempcntc=\count295
+\blx@maxsection=\count296
+\blx@maxsegment@0=\count297
+\blx@notetype=\count298
+\blx@parenlevel@text=\count299
+\blx@parenlevel@foot=\count300
+\blx@sectionciteorder@0=\count301
+\blx@entrysetcounter=\count302
+\blx@biblioinstance=\count303
+\labelnumberwidth=\skip52
+\labelalphawidth=\skip53
+\biblabelsep=\skip54
+\bibitemsep=\skip55
+\bibnamesep=\skip56
+\bibinitsep=\skip57
+\bibparsep=\skip58
+\bibhang=\skip59
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language3
+\c@mincomprange=\count304
+\c@maxcomprange=\count305
+\c@mincompwidth=\count306
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex/blx-dm.def"
+File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'chicago-notes.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count307
+\c@savedafterword=\count308
+\c@annotator=\count309
+\c@savedannotator=\count310
+\c@author=\count311
+\c@savedauthor=\count312
+\c@bookauthor=\count313
+\c@savedbookauthor=\count314
+\c@commentator=\count315
+\c@savedcommentator=\count316
+\c@editor=\count317
+\c@savededitor=\count318
+\c@editora=\count319
+\c@savededitora=\count320
+\c@editorb=\count321
+\c@savededitorb=\count322
+\c@editorc=\count323
+\c@savededitorc=\count324
+\c@foreword=\count325
+\c@savedforeword=\count326
+\c@holder=\count327
+\c@savedholder=\count328
+\c@introduction=\count329
+\c@savedintroduction=\count330
+\c@namea=\count331
+\c@savednamea=\count332
+\c@nameb=\count333
+\c@savednameb=\count334
+\c@namec=\count335
+\c@savednamec=\count336
+\c@translator=\count337
+\c@savedtranslator=\count338
+\c@shortauthor=\count339
+\c@savedshortauthor=\count340
+\c@shorteditor=\count341
+\c@savedshorteditor=\count342
+\c@labelname=\count343
+\c@savedlabelname=\count344
+\c@institution=\count345
+\c@savedinstitution=\count346
+\c@lista=\count347
+\c@savedlista=\count348
+\c@listb=\count349
+\c@savedlistb=\count350
+\c@listc=\count351
+\c@savedlistc=\count352
+\c@listd=\count353
+\c@savedlistd=\count354
+\c@liste=\count355
+\c@savedliste=\count356
+\c@listf=\count357
+\c@savedlistf=\count358
+\c@location=\count359
+\c@savedlocation=\count360
+\c@organization=\count361
+\c@savedorganization=\count362
+\c@origlocation=\count363
+\c@savedoriglocation=\count364
+\c@origpublisher=\count365
+\c@savedorigpublisher=\count366
+\c@publisher=\count367
+\c@savedpublisher=\count368
+\c@language=\count369
+\c@savedlanguage=\count370
+\c@origlanguage=\count371
+\c@savedoriglanguage=\count372
+\c@pageref=\count373
+\c@savedpageref=\count374
+\shorthandwidth=\skip60
+\shortjournalwidth=\skip61
+\shortserieswidth=\skip62
+\shorttitlewidth=\skip63
+\shortauthorwidth=\skip64
+\shorteditorwidth=\skip65
+\locallabelnumberwidth=\skip66
+\locallabelalphawidth=\skip67
+\localshorthandwidth=\skip68
+\localshortjournalwidth=\skip69
+\localshortserieswidth=\skip70
+\localshorttitlewidth=\skip71
+\localshortauthorwidth=\skip72
+\localshorteditorwidth=\skip73
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex/blx-compat.def"
+File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex/biblatex.def"
+File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+\c@textcitecount=\count375
+\c@textcitetotal=\count376
+\c@textcitemaxnames=\count377
+\c@biburlbigbreakpenalty=\count378
+\c@biburlbreakpenalty=\count379
+\c@biburlnumpenalty=\count380
+\c@biburlucpenalty=\count381
+\c@biburllcpenalty=\count382
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count383
+)
+Package biblatex Info: Trying to load bibliography style 'chicago-notes'...
+Package biblatex Info: ... file 'chicago-notes.bbx' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex-chicago/chicago-notes.bbx"
+File: chicago-notes.bbx 2021/06/30 v 3.16 biblatex bibliography style
+\lositemsep=\skip74
+\cms@tempcnta=\count384
+\cms@tempcntb=\count385
+\c@bbx:relatedcount=\count386
+\c@bbx:relatedtotal=\count387
+\c@cms@reviewcount=\count388
+\c@cms@currentnote=\count389
+)
+Package biblatex Info: Trying to load citation style 'chicago-notes'...
+Package biblatex Info: ... file 'chicago-notes.cbx' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex-chicago/chicago-notes.cbx"
+File: chicago-notes.cbx 2021/03/27 v 3.16 biblatex citation style
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\smartcites'.
+Package biblatex Info: Redefining '\footfullcite'.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\citeincitef'.
+Package biblatex Info: Redefining '\citeauthor'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Delimiter 'dateeradelim' in context '' already defined, 
+overwriting.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex/biblatex.cfg"
+File: biblatex.cfg 
+)))
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/base/inputenc.sty"
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/base/fontenc.sty"
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/microtype/microtype.sty"
+Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
+\MT@toks=\toks20
+\MT@count=\count390
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen140
+LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
+\MT@listname@count=\count391
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/microtype/microtype-pdftex.def"
+File: microtype-pdftex.def 2021/03/14 v2.8c Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip75
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/microtype/microtype.cfg"
+File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
+))
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/generic/babel/babel.sty"
+Package: babel 2021/07/22 3.63 The Babel package
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/generic/babel/babel.def"
+File: babel.def 2021/07/22 3.63 Babel common definitions
+\babel@savecnt=\count392
+\U@D=\dimen141
+\l@unhyphenated=\language4
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/generic/babel/txtbabel.def")
+\bbl@readstream=\read3
+)
+\bbl@dirlevel=\count393
+
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/arabi/bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/babel-greek/greek.ldf"
+Language: greek 2020/11/10 v1.10 Greek support for the babel system
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'greek' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 44.
+
+Package babel Info: Hyphen rules for 'greek' set to \l@english
+(babel)             (\language0). Reported on input line 45.
+Package babel Info: Hyphen rules for 'monogreek' set to \l@english
+(babel)             (\language0). Reported on input line 47.
+Package babel Info: Hyphen rules for 'ancientgreek' set to \l@english
+(babel)             (\language0). Reported on input line 49.
+\bbl@monogreek=\count394
+\bbl@polygreek=\count395
+\bbl@ancientgreek=\count396
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/greek-fontenc/lgrenc.def"
+File: lgrenc.def 2020/10/13 2.0 LGR Greek font encoding definitions
+Now handling font encoding LGR ...
+... processing UTF-8 mapping file for font encoding LGR
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/greek-inputenc/lgrenc.dfu"
+File: lgrenc.dfu 2019/07/11 1.7 UTF-8 support for Greek
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0259 (decimal 601)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+0374 (decimal 884)
+   defining Unicode char U+0375 (decimal 885)
+   defining Unicode char U+037A (decimal 890)
+   defining Unicode char U+037E (decimal 894)
+   defining Unicode char U+0384 (decimal 900)
+   defining Unicode char U+0385 (decimal 901)
+   defining Unicode char U+0386 (decimal 902)
+   defining Unicode char U+0387 (decimal 903)
+   defining Unicode char U+0388 (decimal 904)
+   defining Unicode char U+0389 (decimal 905)
+   defining Unicode char U+038A (decimal 906)
+   defining Unicode char U+038C (decimal 908)
+   defining Unicode char U+038E (decimal 910)
+   defining Unicode char U+038F (decimal 911)
+   defining Unicode char U+0390 (decimal 912)
+   defining Unicode char U+0391 (decimal 913)
+   defining Unicode char U+0392 (decimal 914)
+   defining Unicode char U+0393 (decimal 915)
+   defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+0395 (decimal 917)
+   defining Unicode char U+0396 (decimal 918)
+   defining Unicode char U+0397 (decimal 919)
+   defining Unicode char U+0398 (decimal 920)
+   defining Unicode char U+0399 (decimal 921)
+   defining Unicode char U+039A (decimal 922)
+   defining Unicode char U+039B (decimal 923)
+   defining Unicode char U+039C (decimal 924)
+   defining Unicode char U+039D (decimal 925)
+   defining Unicode char U+039E (decimal 926)
+   defining Unicode char U+039F (decimal 927)
+   defining Unicode char U+03A0 (decimal 928)
+   defining Unicode char U+03A1 (decimal 929)
+   defining Unicode char U+03A3 (decimal 931)
+   defining Unicode char U+03A4 (decimal 932)
+   defining Unicode char U+03A5 (decimal 933)
+   defining Unicode char U+03A6 (decimal 934)
+   defining Unicode char U+03A7 (decimal 935)
+   defining Unicode char U+03A8 (decimal 936)
+   defining Unicode char U+03A9 (decimal 937)
+   defining Unicode char U+03AA (decimal 938)
+   defining Unicode char U+03AB (decimal 939)
+   defining Unicode char U+03AC (decimal 940)
+   defining Unicode char U+03AD (decimal 941)
+   defining Unicode char U+03AE (decimal 942)
+   defining Unicode char U+03AF (decimal 943)
+   defining Unicode char U+03B0 (decimal 944)
+   defining Unicode char U+03B1 (decimal 945)
+   defining Unicode char U+03B2 (decimal 946)
+   defining Unicode char U+03B3 (decimal 947)
+   defining Unicode char U+03B4 (decimal 948)
+   defining Unicode char U+03B5 (decimal 949)
+   defining Unicode char U+03B6 (decimal 950)
+   defining Unicode char U+03B7 (decimal 951)
+   defining Unicode char U+03B8 (decimal 952)
+   defining Unicode char U+03B9 (decimal 953)
+   defining Unicode char U+03BA (decimal 954)
+   defining Unicode char U+03BB (decimal 955)
+   defining Unicode char U+03BC (decimal 956)
+   defining Unicode char U+03BD (decimal 957)
+   defining Unicode char U+03BE (decimal 958)
+   defining Unicode char U+03BF (decimal 959)
+   defining Unicode char U+03C0 (decimal 960)
+   defining Unicode char U+03C1 (decimal 961)
+   defining Unicode char U+03C2 (decimal 962)
+   defining Unicode char U+03C3 (decimal 963)
+   defining Unicode char U+03C4 (decimal 964)
+   defining Unicode char U+03C5 (decimal 965)
+   defining Unicode char U+03C6 (decimal 966)
+   defining Unicode char U+03C7 (decimal 967)
+   defining Unicode char U+03C8 (decimal 968)
+   defining Unicode char U+03C9 (decimal 969)
+   defining Unicode char U+03CA (decimal 970)
+   defining Unicode char U+03CB (decimal 971)
+   defining Unicode char U+03CC (decimal 972)
+   defining Unicode char U+03CD (decimal 973)
+   defining Unicode char U+03CE (decimal 974)
+   defining Unicode char U+03D0 (decimal 976)
+   defining Unicode char U+03D1 (decimal 977)
+   defining Unicode char U+03D5 (decimal 981)
+   defining Unicode char U+03D6 (decimal 982)
+   defining Unicode char U+03D8 (decimal 984)
+   defining Unicode char U+03D9 (decimal 985)
+   defining Unicode char U+03DA (decimal 986)
+   defining Unicode char U+03DB (decimal 987)
+   defining Unicode char U+03DC (decimal 988)
+   defining Unicode char U+03DD (decimal 989)
+   defining Unicode char U+03DF (decimal 991)
+   defining Unicode char U+03E0 (decimal 992)
+   defining Unicode char U+03E1 (decimal 993)
+   defining Unicode char U+03F0 (decimal 1008)
+   defining Unicode char U+03F1 (decimal 1009)
+   defining Unicode char U+03F4 (decimal 1012)
+   defining Unicode char U+03F5 (decimal 1013)
+   defining Unicode char U+1F00 (decimal 7936)
+   defining Unicode char U+1F01 (decimal 7937)
+   defining Unicode char U+1F02 (decimal 7938)
+   defining Unicode char U+1F03 (decimal 7939)
+   defining Unicode char U+1F04 (decimal 7940)
+   defining Unicode char U+1F05 (decimal 7941)
+   defining Unicode char U+1F06 (decimal 7942)
+   defining Unicode char U+1F07 (decimal 7943)
+   defining Unicode char U+1F08 (decimal 7944)
+   defining Unicode char U+1F09 (decimal 7945)
+   defining Unicode char U+1F0A (decimal 7946)
+   defining Unicode char U+1F0B (decimal 7947)
+   defining Unicode char U+1F0C (decimal 7948)
+   defining Unicode char U+1F0D (decimal 7949)
+   defining Unicode char U+1F0E (decimal 7950)
+   defining Unicode char U+1F0F (decimal 7951)
+   defining Unicode char U+1F10 (decimal 7952)
+   defining Unicode char U+1F11 (decimal 7953)
+   defining Unicode char U+1F12 (decimal 7954)
+   defining Unicode char U+1F13 (decimal 7955)
+   defining Unicode char U+1F14 (decimal 7956)
+   defining Unicode char U+1F15 (decimal 7957)
+   defining Unicode char U+1F18 (decimal 7960)
+   defining Unicode char U+1F19 (decimal 7961)
+   defining Unicode char U+1F1A (decimal 7962)
+   defining Unicode char U+1F1B (decimal 7963)
+   defining Unicode char U+1F1C (decimal 7964)
+   defining Unicode char U+1F1D (decimal 7965)
+   defining Unicode char U+1F20 (decimal 7968)
+   defining Unicode char U+1F21 (decimal 7969)
+   defining Unicode char U+1F22 (decimal 7970)
+   defining Unicode char U+1F23 (decimal 7971)
+   defining Unicode char U+1F24 (decimal 7972)
+   defining Unicode char U+1F25 (decimal 7973)
+   defining Unicode char U+1F26 (decimal 7974)
+   defining Unicode char U+1F27 (decimal 7975)
+   defining Unicode char U+1F28 (decimal 7976)
+   defining Unicode char U+1F29 (decimal 7977)
+   defining Unicode char U+1F2A (decimal 7978)
+   defining Unicode char U+1F2B (decimal 7979)
+   defining Unicode char U+1F2C (decimal 7980)
+   defining Unicode char U+1F2D (decimal 7981)
+   defining Unicode char U+1F2E (decimal 7982)
+   defining Unicode char U+1F2F (decimal 7983)
+   defining Unicode char U+1F30 (decimal 7984)
+   defining Unicode char U+1F31 (decimal 7985)
+   defining Unicode char U+1F32 (decimal 7986)
+   defining Unicode char U+1F33 (decimal 7987)
+   defining Unicode char U+1F34 (decimal 7988)
+   defining Unicode char U+1F35 (decimal 7989)
+   defining Unicode char U+1F36 (decimal 7990)
+   defining Unicode char U+1F37 (decimal 7991)
+   defining Unicode char U+1F38 (decimal 7992)
+   defining Unicode char U+1F39 (decimal 7993)
+   defining Unicode char U+1F3A (decimal 7994)
+   defining Unicode char U+1F3B (decimal 7995)
+   defining Unicode char U+1F3C (decimal 7996)
+   defining Unicode char U+1F3D (decimal 7997)
+   defining Unicode char U+1F3E (decimal 7998)
+   defining Unicode char U+1F3F (decimal 7999)
+   defining Unicode char U+1F40 (decimal 8000)
+   defining Unicode char U+1F41 (decimal 8001)
+   defining Unicode char U+1F42 (decimal 8002)
+   defining Unicode char U+1F43 (decimal 8003)
+   defining Unicode char U+1F44 (decimal 8004)
+   defining Unicode char U+1F45 (decimal 8005)
+   defining Unicode char U+1F48 (decimal 8008)
+   defining Unicode char U+1F49 (decimal 8009)
+   defining Unicode char U+1F4A (decimal 8010)
+   defining Unicode char U+1F4B (decimal 8011)
+   defining Unicode char U+1F4C (decimal 8012)
+   defining Unicode char U+1F4D (decimal 8013)
+   defining Unicode char U+1F50 (decimal 8016)
+   defining Unicode char U+1F51 (decimal 8017)
+   defining Unicode char U+1F52 (decimal 8018)
+   defining Unicode char U+1F53 (decimal 8019)
+   defining Unicode char U+1F54 (decimal 8020)
+   defining Unicode char U+1F55 (decimal 8021)
+   defining Unicode char U+1F56 (decimal 8022)
+   defining Unicode char U+1F57 (decimal 8023)
+   defining Unicode char U+1F59 (decimal 8025)
+   defining Unicode char U+1F5B (decimal 8027)
+   defining Unicode char U+1F5D (decimal 8029)
+   defining Unicode char U+1F5F (decimal 8031)
+   defining Unicode char U+1F60 (decimal 8032)
+   defining Unicode char U+1F61 (decimal 8033)
+   defining Unicode char U+1F62 (decimal 8034)
+   defining Unicode char U+1F63 (decimal 8035)
+   defining Unicode char U+1F64 (decimal 8036)
+   defining Unicode char U+1F65 (decimal 8037)
+   defining Unicode char U+1F66 (decimal 8038)
+   defining Unicode char U+1F67 (decimal 8039)
+   defining Unicode char U+1F68 (decimal 8040)
+   defining Unicode char U+1F69 (decimal 8041)
+   defining Unicode char U+1F6A (decimal 8042)
+   defining Unicode char U+1F6B (decimal 8043)
+   defining Unicode char U+1F6C (decimal 8044)
+   defining Unicode char U+1F6D (decimal 8045)
+   defining Unicode char U+1F6E (decimal 8046)
+   defining Unicode char U+1F6F (decimal 8047)
+   defining Unicode char U+1F70 (decimal 8048)
+   defining Unicode char U+1F71 (decimal 8049)
+   defining Unicode char U+1F72 (decimal 8050)
+   defining Unicode char U+1F73 (decimal 8051)
+   defining Unicode char U+1F74 (decimal 8052)
+   defining Unicode char U+1F75 (decimal 8053)
+   defining Unicode char U+1F76 (decimal 8054)
+   defining Unicode char U+1F77 (decimal 8055)
+   defining Unicode char U+1F78 (decimal 8056)
+   defining Unicode char U+1F79 (decimal 8057)
+   defining Unicode char U+1F7A (decimal 8058)
+   defining Unicode char U+1F7B (decimal 8059)
+   defining Unicode char U+1F7C (decimal 8060)
+   defining Unicode char U+1F7D (decimal 8061)
+   defining Unicode char U+1F80 (decimal 8064)
+   defining Unicode char U+1F81 (decimal 8065)
+   defining Unicode char U+1F82 (decimal 8066)
+   defining Unicode char U+1F83 (decimal 8067)
+   defining Unicode char U+1F84 (decimal 8068)
+   defining Unicode char U+1F85 (decimal 8069)
+   defining Unicode char U+1F86 (decimal 8070)
+   defining Unicode char U+1F87 (decimal 8071)
+   defining Unicode char U+1F88 (decimal 8072)
+   defining Unicode char U+1F89 (decimal 8073)
+   defining Unicode char U+1F8A (decimal 8074)
+   defining Unicode char U+1F8B (decimal 8075)
+   defining Unicode char U+1F8C (decimal 8076)
+   defining Unicode char U+1F8D (decimal 8077)
+   defining Unicode char U+1F8E (decimal 8078)
+   defining Unicode char U+1F8F (decimal 8079)
+   defining Unicode char U+1F90 (decimal 8080)
+   defining Unicode char U+1F91 (decimal 8081)
+   defining Unicode char U+1F92 (decimal 8082)
+   defining Unicode char U+1F93 (decimal 8083)
+   defining Unicode char U+1F94 (decimal 8084)
+   defining Unicode char U+1F95 (decimal 8085)
+   defining Unicode char U+1F96 (decimal 8086)
+   defining Unicode char U+1F97 (decimal 8087)
+   defining Unicode char U+1F98 (decimal 8088)
+   defining Unicode char U+1F99 (decimal 8089)
+   defining Unicode char U+1F9A (decimal 8090)
+   defining Unicode char U+1F9B (decimal 8091)
+   defining Unicode char U+1F9C (decimal 8092)
+   defining Unicode char U+1F9D (decimal 8093)
+   defining Unicode char U+1F9E (decimal 8094)
+   defining Unicode char U+1F9F (decimal 8095)
+   defining Unicode char U+1FA0 (decimal 8096)
+   defining Unicode char U+1FA1 (decimal 8097)
+   defining Unicode char U+1FA2 (decimal 8098)
+   defining Unicode char U+1FA3 (decimal 8099)
+   defining Unicode char U+1FA4 (decimal 8100)
+   defining Unicode char U+1FA5 (decimal 8101)
+   defining Unicode char U+1FA6 (decimal 8102)
+   defining Unicode char U+1FA7 (decimal 8103)
+   defining Unicode char U+1FA8 (decimal 8104)
+   defining Unicode char U+1FA9 (decimal 8105)
+   defining Unicode char U+1FAA (decimal 8106)
+   defining Unicode char U+1FAB (decimal 8107)
+   defining Unicode char U+1FAC (decimal 8108)
+   defining Unicode char U+1FAD (decimal 8109)
+   defining Unicode char U+1FAE (decimal 8110)
+   defining Unicode char U+1FAF (decimal 8111)
+   defining Unicode char U+1FB0 (decimal 8112)
+   defining Unicode char U+1FB1 (decimal 8113)
+   defining Unicode char U+1FB2 (decimal 8114)
+   defining Unicode char U+1FB3 (decimal 8115)
+   defining Unicode char U+1FB4 (decimal 8116)
+   defining Unicode char U+1FB6 (decimal 8118)
+   defining Unicode char U+1FB7 (decimal 8119)
+   defining Unicode char U+1FB8 (decimal 8120)
+   defining Unicode char U+1FB9 (decimal 8121)
+   defining Unicode char U+1FBA (decimal 8122)
+   defining Unicode char U+1FBB (decimal 8123)
+   defining Unicode char U+1FBC (decimal 8124)
+   defining Unicode char U+1FBD (decimal 8125)
+   defining Unicode char U+1FBE (decimal 8126)
+   defining Unicode char U+1FBF (decimal 8127)
+   defining Unicode char U+1FC0 (decimal 8128)
+   defining Unicode char U+1FC1 (decimal 8129)
+   defining Unicode char U+1FC2 (decimal 8130)
+   defining Unicode char U+1FC3 (decimal 8131)
+   defining Unicode char U+1FC4 (decimal 8132)
+   defining Unicode char U+1FC6 (decimal 8134)
+   defining Unicode char U+1FC7 (decimal 8135)
+   defining Unicode char U+1FC8 (decimal 8136)
+   defining Unicode char U+1FC9 (decimal 8137)
+   defining Unicode char U+1FCA (decimal 8138)
+   defining Unicode char U+1FCB (decimal 8139)
+   defining Unicode char U+1FCC (decimal 8140)
+   defining Unicode char U+1FCD (decimal 8141)
+   defining Unicode char U+1FCE (decimal 8142)
+   defining Unicode char U+1FCF (decimal 8143)
+   defining Unicode char U+1FD0 (decimal 8144)
+   defining Unicode char U+1FD1 (decimal 8145)
+   defining Unicode char U+1FD2 (decimal 8146)
+   defining Unicode char U+1FD3 (decimal 8147)
+   defining Unicode char U+1FD6 (decimal 8150)
+   defining Unicode char U+1FD7 (decimal 8151)
+   defining Unicode char U+1FD8 (decimal 8152)
+   defining Unicode char U+1FD9 (decimal 8153)
+   defining Unicode char U+1FDA (decimal 8154)
+   defining Unicode char U+1FDB (decimal 8155)
+   defining Unicode char U+1FDD (decimal 8157)
+   defining Unicode char U+1FDE (decimal 8158)
+   defining Unicode char U+1FDF (decimal 8159)
+   defining Unicode char U+1FE0 (decimal 8160)
+   defining Unicode char U+1FE1 (decimal 8161)
+   defining Unicode char U+1FE2 (decimal 8162)
+   defining Unicode char U+1FE3 (decimal 8163)
+   defining Unicode char U+1FE4 (decimal 8164)
+   defining Unicode char U+1FE5 (decimal 8165)
+   defining Unicode char U+1FE6 (decimal 8166)
+   defining Unicode char U+1FE7 (decimal 8167)
+   defining Unicode char U+1FE8 (decimal 8168)
+   defining Unicode char U+1FE9 (decimal 8169)
+   defining Unicode char U+1FEA (decimal 8170)
+   defining Unicode char U+1FEB (decimal 8171)
+   defining Unicode char U+1FEC (decimal 8172)
+   defining Unicode char U+1FED (decimal 8173)
+   defining Unicode char U+1FEE (decimal 8174)
+   defining Unicode char U+1FEF (decimal 8175)
+   defining Unicode char U+1FF2 (decimal 8178)
+   defining Unicode char U+1FF3 (decimal 8179)
+   defining Unicode char U+1FF4 (decimal 8180)
+   defining Unicode char U+1FF6 (decimal 8182)
+   defining Unicode char U+1FF7 (decimal 8183)
+   defining Unicode char U+1FF8 (decimal 8184)
+   defining Unicode char U+1FF9 (decimal 8185)
+   defining Unicode char U+1FFA (decimal 8186)
+   defining Unicode char U+1FFB (decimal 8187)
+   defining Unicode char U+1FFC (decimal 8188)
+   defining Unicode char U+1FFD (decimal 8189)
+   defining Unicode char U+1FFE (decimal 8190)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+10144 (decimal 65860)
+   defining Unicode char U+10145 (decimal 65861)
+   defining Unicode char U+10146 (decimal 65862)
+   defining Unicode char U+10147 (decimal 65863)
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/greek-fontenc/greek-fontenc.def"
+File: greek-fontenc.def 2020/10/30 2.0 Common Greek font encoding definitions
+))
+LaTeX Info: Redefining \& on input line 125.
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/babel-english/english.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
+))
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/teubner/teubner.sty"
+Package: teubner 2021/02/08 v.5.4 Extensions for Greek philology
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/graphics/graphicx.sty"
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /latex/graphics/graphics.sty"
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
@@ -99,18 +848,121 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 /latex/graphics-def/pdftex.def"
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen140
-\Gin@req@width=\dimen141
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
 )
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/base/exscale.sty"
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen144
+)
+LaTeX Info: Redefining \textlatin on input line 171.
+LaTeX Info: Redefining \cap on input line 242.
+LaTeX Info: Redefining \: on input line 678.
+LaTeX Info: Redefining \; on input line 679.
+LaTeX Info: Redefining \| on input line 689.
+LaTeX Info: Redefining \star on input line 863.
+\c@verso=\count397
+\c@subverso=\count398
+\versoskip=\skip76
+\br@cedmetrics=\skip77
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/tools/trace.sty"
+Package: trace 2021/04/18 v1.1f trace LaTeX code
+))
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/threeparttable/threeparttable.sty"
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box50
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/ellipsis/ellipsis.sty"
+Package: ellipsis 2020/05/22 v1.8 fixes spacing around ellipses (three dots)
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/tools/xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+LaTeX Info: Redefining \textellipsis on input line 77.
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/tocloft/tocloft.sty"
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip78
+\cftbeforetoctitleskip=\skip79
+\cftaftertoctitleskip=\skip80
+\cftbeforepartskip=\skip81
+\cftpartnumwidth=\skip82
+\cftpartindent=\skip83
+\cftbeforesecskip=\skip84
+\cftsecindent=\skip85
+\cftsecnumwidth=\skip86
+\cftbeforesubsecskip=\skip87
+\cftsubsecindent=\skip88
+\cftsubsecnumwidth=\skip89
+\cftbeforesubsubsecskip=\skip90
+\cftsubsubsecindent=\skip91
+\cftsubsubsecnumwidth=\skip92
+\cftbeforeparaskip=\skip93
+\cftparaindent=\skip94
+\cftparanumwidth=\skip95
+\cftbeforesubparaskip=\skip96
+\cftsubparaindent=\skip97
+\cftsubparanumwidth=\skip98
+\cftbeforeloftitleskip=\skip99
+\cftafterloftitleskip=\skip100
+\cftbeforefigskip=\skip101
+\cftfigindent=\skip102
+\cftfignumwidth=\skip103
+\c@lofdepth=\count399
+\c@lotdepth=\count400
+\cftbeforelottitleskip=\skip104
+\cftafterlottitleskip=\skip105
+\cftbeforetabskip=\skip106
+\cfttabindent=\skip107
+\cfttabnumwidth=\skip108
+)
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/csquotes/csquotes.sty"
+Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
+\csq@reset=\count401
+\csq@gtype=\count402
+\csq@glevel=\count403
+\csq@qlevel=\count404
+\csq@maxlvl=\count405
+\csq@tshold=\count406
+\csq@ltx@everypar=\toks21
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/csquotes/csquotes.def"
+File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/csquotes/csquotes.cfg"
+File: csquotes.cfg 
+))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Sweave.sty
+Package: Sweave 
+
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /latex/fancyvrb/fancyvrb.sty"
 Package: fancyvrb 2021/08/12 v3.8 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count192
-\FV@InFile=\read2
-\FV@TabBox=\box50
-\c@FancyVerbLine=\count193
-\FV@StepNumber=\count194
-\FV@OutFile=\write3
+\FV@CodeLineNo=\count407
+\FV@InFile=\read4
+\FV@TabBox=\box51
+\c@FancyVerbLine=\count408
+\FV@StepNumber=\count409
+\FV@OutFile=\write4
 )
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /latex/base/textcomp.sty"
@@ -132,20 +984,16 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 /latex/nowidow/nowidow.sty"
 Package: nowidow 2011/09/20 1.0 Easily prevent widows and orphans
 Package: nowidow 
-
-("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
-/latex/kvoptions/kvoptions.sty"
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-
-("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
-/generic/ltxcmds/ltxcmds.sty"
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
-/generic/kvsetkeys/kvsetkeys.sty"
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)))
-LaTeX Font Info:    Trying to load font information for T1+aer on input line 15
+/latex/greek-fontenc/textalpha.sty"
+Package: textalpha 2020/10/30 2.0 macros for Greek letters in text
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 41
 .
 
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
@@ -155,40 +1003,128 @@ File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /latex/l3backend/l3backend-pdftex.def"
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count195
-\l__pdf_internal_box=\box51
+\l__color_backend_stack_int=\count410
+\l__pdf_internal_box=\box52
 ) (GreatFlood.aux)
 \openout1 = `GreatFlood.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 41.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 4
+1.
 
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/cbfonts-fd/lgrcmr.fd"
+File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
+)
+LaTeX Font Info:    ... okay on input line 41.
+Package biblatex Info: Trying to load language 'english' -> 'cms-american'...
+Package biblatex Info: ... file 'cms-american.lbx' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex-chicago/cms-american.lbx"
+File: cms-american.lbx 2021/06/30 v 3.16 biblatex localization
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex/lbx/american.lbx"
+File: american.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex/lbx/english.lbx"
+File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex/lbx/english.lbx"
+File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'greek'...
+Package biblatex Info: ... file 'greek.lbx' found.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex/lbx/greek.lbx"
+File: greek.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/l3kernel/expl3.sty"
+Package: expl3 2021-08-27 L3 programming layer (loader) 
+)
+Package biblatex Info: ... and expl3
+(biblatex)             2021-08-27 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/biblatex/blx-case-expl3.sty"
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/l3packages/xparse/xparse.sty"
+Package: xparse 2021-08-27 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
+)
+\openout3 = `GreatFlood.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'GreatFlood.bbl' not found.
+
+No file GreatFlood.bbl.
+Package biblatex Info: Reference section=0 on input line 41.
+Package biblatex Info: Reference segment=0 on input line 41.
+LaTeX Info: Redefining \microtypecontext on input line 41.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 41.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/microtype/mt-cmr.cfg"
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /context/base/mkii/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count196
-\scratchdimen=\dimen142
-\scratchbox=\box52
-\nofMPsegments=\count197
-\nofMParguments=\count198
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count199
-\MPscratchDim=\dimen143
-\MPnumerator=\count266
-\makeMPintoPDFobject=\count267
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count411
+\scratchdimen=\dimen145
+\scratchbox=\box53
+\nofMPsegments=\count412
+\nofMParguments=\count413
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count414
+\MPscratchDim=\dimen146
+\MPnumerator=\count415
+\makeMPintoPDFobject=\count416
+\everyMPtoPDFconversion=\toks23
 )
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /latex/epstopdf-pkg/epstopdf-base.sty"
@@ -199,55 +1135,114 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /latex/00miktex/epstopdf-sys.cfg"
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (GreatFlood-concordance.tex)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 20.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 20.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 20.
-LaTeX Font Info:    Trying to load font information for TS1+aer on input line 2
-0.
+))
+LaTeX Info: Redefining \dots on input line 41.
+ (GreatFlood-concordance.tex)
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <6> on input line 48.
+LaTeX Font Info:    Trying to load font information for TS1+aer on input line 4
+8.
 
 (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <8> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 20.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 20.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 48.
 
 [1
 
 {/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/data/pdftex/
-config/pdftex.map}]
-<GreatFlood-003.pdf, id=11, 433.62pt x 433.62pt>
-File: GreatFlood-003.pdf Graphic file (type pdf)
-<use GreatFlood-003.pdf>
-Package pdftex.def Info: GreatFlood-003.pdf  used on input line 23.
-(pdftex.def)             Requested size: 375.80544pt x 375.8238pt.
- [1
+config/pdftex.map}] (Sections/Methodology.Rnw
+LaTeX Font Info:    Trying to load font information for LGR+aer on input line 1
+0.
+LaTeX Font Info:    No file LGRaer.fd. on input line 10.
 
- <./GreatFlood-003.pdf>] (GreatFlood.aux) ) 
+
+LaTeX Font Warning: Font shape `LGR/aer/m/n' undefined
+(Font)              using `LGR/cmr/m/n' instead on input line 10.
+
+LaTeX Font Info:    Trying to load font information for OT1+aer on input line 1
+1.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/ae/ot1aer.fd"
+File: ot1aer.fd 1997/11/16 Font definitions for OT1/aer.
+) [1
+
+] [2] [3] [4])
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 7
+0.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/ae/t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `aett' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for TS1+aett on input line 
+71.
+
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/ts1aett.fd
+File: ts1aett.fd 
+)
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+71.
+
+("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
+/latex/base/ts1cmtt.fd"
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `TS1/aett/m/n' in size <12> not available
+(Font)              Font shape `TS1/cmtt/m/n' tried instead on input line 71.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [5]
+<GreatFlood-Turn_Conseq.pdf, id=29, 433.62pt x 433.62pt>
+File: GreatFlood-Turn_Conseq.pdf Graphic file (type pdf)
+<use GreatFlood-Turn_Conseq.pdf>
+Package pdftex.def Info: GreatFlood-Turn_Conseq.pdf  used on input line 123.
+(pdftex.def)             Requested size: 375.80544pt x 375.8238pt.
+ [6] [7 <./GreatFlood-Turn_Conseq.pdf>] [8]
+(GreatFlood.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'GreatFlood.run.xml'.
+\openout1 = `GreatFlood.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2951 strings out of 480832
- 47996 string characters out of 2900232
- 637813 words of memory out of 3000000
- 20536 multiletter control sequences out of 15000+600000
- 416189 words of font info for 51 fonts, out of 8000000 for 9000
+ 18309 strings out of 480832
+ 341282 string characters out of 2900232
+ 1402545 words of memory out of 3000000
+ 35357 multiletter control sequences out of 15000+600000
+ 442921 words of font info for 304 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,5n,80p,217b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
- </Users/thomasbroadwater/Library/Ap
+ 85i,6n,94p,745b,3824s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/data/font
+s/pk/ljfour/jknappen/ec/dpi600/tctt1200.pk> </Users/thomasbroadwater/Library/Ap
 plication Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm100
 0.pk> </Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/data/f
 onts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk></Users/thomasbroadwater/Library/
 Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.
 pfb></Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/thomasbroadwater/Library/Appli
-cation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on GreatFlood.pdf (2 pages, 52879 bytes).
+fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/thomasbroadwater/Library/Appl
+ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+</Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/font
+s/type1/public/amsfonts/cm/cmr10.pfb></Users/thomasbroadwater/Library/Applicati
+on Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Use
+rs/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb></Users/thomasbroadwater/Library/Application S
+upport/MiKTeX/texmfs/install/fonts/type1/public/cbgreek/grmn1200.pfb>
+Output written on GreatFlood.pdf (9 pages, 129524 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 10 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 54282 words of extra memory for PDF output out of 61914 (max. 10000000)
 
