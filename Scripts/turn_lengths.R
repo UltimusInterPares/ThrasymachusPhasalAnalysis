@@ -19,9 +19,6 @@ names(republic_turn_length) <- c("index", "turn", "speaker", "length (words)") %
 republic_turn_length <- republic_turn_length %>% #reorder to match sentence length
   relocate("speaker", .before = "turn")
 
-# Turn Data by Speaker + Global - - - - - - - - - - - - - - - - - - - - - -
-# mean, median, mode, and standard deviation of sentence lengths by speaker
-
 # Gather turn Data
 cleitophon_length <- republic_turn_length %>%
   filter(str_detect(speaker, "Cleitophon") == T)
@@ -75,15 +72,54 @@ rm(cleitophon_length,
 # changed republic_sentence_length to " "_turn_" " to clean it up
 # changed color and _color_ to fill and _fill_
 turn_length <- republic_turn_length %>%
-  ggplot(mapping = aes(x=reorder(turn, index), y=length_words, fill = speaker)) +
+  ggplot() +
   scale_fill_manual(values=cbPalette) +
-  geom_bar(stat = "identity") + # prevents geom_bar() from reorganizing
+  geom_bar(mapping = aes(x=index, y=length_words, fill = speaker), stat = "identity") + # prevents geom_bar() from reorganizing
+  geom_smooth(mapping = aes(x=index, y=length_words), se = F, method = "loess") +
   theme(axis.text.x = element_text(angle = 90)) +
-  xlab("Turn") +
-  ylab("Length")
+  xlab("Turn (Index)") +
+  ylab("Words")
 
-# Trying to get a bell curve of sentence lengths
-# ggplot(count(republic_sentence_length), mapping = aes(x = length_words, y = n)) +
-#   stat_function(fun = dnorm,
-#                 args = list(mean = mean(republic_sentence_length$length_words),
-#                             sd = sd(republic_sentence_length$length_words)))
+# T Tests ----------------------------------------------------------------------
+# Quick p-values of means
+for (i in c(2:6)) {
+  val <- t.test(c(lot$mean[1], lot$mean[i]))$p.value
+  paste(lot$speaker[i], val, sep = ": ") %>%
+    print()
+}
+
+# Quick p-values of standard deviations
+for (i in c(2:6)) {
+  val <- t.test(c(dot$sd[1], dot$sd[i]))$p.value
+  paste(dot$speaker[i], val, sep = ": ") %>%
+    print()
+}
+
+# P values for each individual turn.
+length_p <- c()
+for (i in c(1:nrow(republic_turn_length))) {
+  length_p[i] <- t.test(c(dot$mean[1], republic_turn_length$length_words[i]))$p.value
+}
+
+republic_turn_length_p <- republic_turn_length %>%
+  add_column(p_val = conseq_p, .after = "length_words")
+
+# sen_sentiment_bar <- republic_afinn %>%
+#   filter(str_detect(speaker, "(Socrates|Thrasymachus)") == T) %>%
+#   ggplot(aes(index, value, fill = speaker)) +
+#   scale_fill_manual(values=cbPalette[c(4,5)]) +
+#   geom_bar(stat = "identity", show.legend = FALSE) +
+#   geom_smooth(se = FALSE, show.legend = FALSE) +
+#   facet_wrap(~speaker, nrow = 2, scales = "fixed") +
+#   theme(axis.text.x=element_text(angle=90)) +
+#   xlab("Word") +
+#   ylab("Sentiment")
+
+
+ggplot() +
+  geom_line(data = republic_turn_length, mapping = aes(x=index, y=length_words), color = cbPalette[5], stat = "identity") + # prevents geom_bar() from reorganizing
+  geom_bar(data = republic_turn_conseq, mapping = aes(x=index, y=n), fill = cbPalette[2], stat = "identity") + # prevents geom_bar() from reorganizing
+  theme(axis.text.x = element_text(angle = 90)) +
+  xlab("Turn (Index)") +
+  ylab("Words")
+

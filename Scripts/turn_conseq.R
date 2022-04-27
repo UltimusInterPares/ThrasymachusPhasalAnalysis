@@ -65,6 +65,8 @@ turn_conseq <- republic_turn_conseq %>%
   xlab("Turn (Index)") +
   ylab("Sentences")
 
+
+# T Tests ----------------------------------------------------------------------
 # Quick p-values of means
 for (i in c(2:6)) {
   val <- t.test(c(dot$mean[1], dot$mean[i]))$p.value
@@ -79,7 +81,8 @@ for (i in c(2:6)) {
     print()
 }
 
-# P values for each turn.
+
+# P values for each individual turn.
 conseq_p <- c()
 for (i in c(1:nrow(republic_turn_conseq))) {
   conseq_p[i] <- t.test(c(dot$mean[1], republic_turn_conseq$n[i]))$p.value
@@ -87,3 +90,5 @@ for (i in c(1:nrow(republic_turn_conseq))) {
 
 republic_turn_conseq_p <- republic_turn_conseq %>%
   add_column(p_val = conseq_p, .after = "n")
+
+

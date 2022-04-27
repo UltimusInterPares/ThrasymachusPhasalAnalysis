@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.9.5)  26 APR 2022 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.9.5)  26 APR 2022 18:44
 entering extended mode
 **./GreatFlood.tex
 (GreatFlood.tex
@@ -1209,7 +1209,13 @@ File: GreatFlood-Turn_Conseq.pdf Graphic file (type pdf)
 Package pdftex.def Info: GreatFlood-Turn_Conseq.pdf  used on input line 123.
 (pdftex.def)             Requested size: 375.80544pt x 375.8238pt.
  [6] [7 <./GreatFlood-Turn_Conseq.pdf>] [8]
-(GreatFlood.aux)
+<GreatFlood-Turn_Length.pdf, id=48, 433.62pt x 433.62pt>
+File: GreatFlood-Turn_Length.pdf Graphic file (type pdf)
+<use GreatFlood-Turn_Length.pdf>
+Package pdftex.def Info: GreatFlood-Turn_Length.pdf  used on input line 220.
+(pdftex.def)             Requested size: 375.80544pt x 375.8238pt.
+
+[9] [10 <./GreatFlood-Turn_Length.pdf>] (GreatFlood.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1218,11 +1224,11 @@ Package logreq Info: Writing requests to 'GreatFlood.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18309 strings out of 480832
- 341282 string characters out of 2900232
- 1402545 words of memory out of 3000000
- 35357 multiletter control sequences out of 15000+600000
- 442921 words of font info for 304 fonts, out of 8000000 for 9000
+ 18328 strings out of 480832
+ 341737 string characters out of 2900232
+ 1403793 words of memory out of 3000000
+ 35369 multiletter control sequences out of 15000+600000
+ 443444 words of font info for 310 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  85i,6n,94p,745b,3824s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/data/font
@@ -1242,9 +1248,9 @@ e1/public/amsfonts/cm/cmr8.pfb></Users/thomasbroadwater/Library/Application Sup
 port/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb></Users/th
 omasbroadwater/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
 blic/cbgreek/grmn1200.pfb>
-Output written on GreatFlood.pdf (9 pages, 138160 bytes).
+Output written on GreatFlood.pdf (11 pages, 152966 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 54282 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 54287 words of extra memory for PDF output out of 61914 (max. 10000000)
 

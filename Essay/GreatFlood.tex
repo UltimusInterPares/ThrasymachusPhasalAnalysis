@@ -65,7 +65,7 @@ represents the middle value when the data is organized numerically, and the mode
 represents the middle value when organized. The standard deviation represents
 the overall variation within the data. The table is printed below.
 
-\begin{table}
+\begin{table}[htbp]
 \begin{Schunk}
 \begin{Soutput}
 # A tibble: 6 × 5
@@ -93,7 +93,7 @@ p-value for each speaker. For the purposes of this study, if a p-value is less
 than 0.05, then the difference between the speaker's mean and the global mean
 are significantly different. The results of the test are printed below.
 
-\begin{table}
+\begin{table}[htbp]
 \begin{Schunk}
 \begin{Soutput}
 [1] "cleitophon: 0.0755533142252797"
@@ -119,7 +119,7 @@ The x-axis represents the index — a number identifying each turn in the data
 set — and the y-axis represents the number of sentences in each turn. The blue
 line represents the global mean density over time.
 
-\begin{figure}
+\begin{figure}[htbp]
 \includegraphics{GreatFlood-Turn_Conseq}
 \caption{Sentence Density by Speaker}
 \label{graph:SentenceDensity}
@@ -145,10 +145,81 @@ considered when defining phases.
 \end{Soutput}
 \end{Schunk}
 \caption{P-Values: Standard Deviation of Turn Density by Speaker}
-\label{tab:SDPval}
+\label{tab:DSDPval}
 \end{table}
 
 \section{Words per Turn (Turn Length)}
 
+
+The second part of the script follows the same pattern as the first, but now
+tallies the number of words per turn, hoping to establish a correlation between
+turn ``length'' and phase transitions.
+
+Once again, the results are relatively consistent. Polemarchus, with his small
+sample size, shows a statistically significant increase in words per turn,
+giving him a noticeably high average turn length. However, when subject to a
+t-test, the other interlocutors show p-values much higher than 0.05, indicating
+that their averages are not statistically significant.
+
+\begin{table}[htbp]
+\begin{Schunk}
+\begin{Soutput}
+# A tibble: 6 × 5
+  speaker      mean median  mode    sd
+  <chr>       <dbl>  <dbl> <int> <dbl>
+1 global      25.5      12     2 48.6 
+2 cleitophon  20        17    NA 13.7 
+3 glaucon      9.38      5     2  9.94
+4 polemarchus 28.2      17    NA 32.3 
+5 socrates    36.4      20    19 44.9 
+6 thrasymacus 14.9       3     2 52.1 
+\end{Soutput}
+\end{Schunk}
+\caption{Turn Length Data}
+\label{tab:LengthData}
+\end{table}
+
+\begin{table}[htbp]
+\begin{Schunk}
+\begin{Soutput}
+[1] "cleitophon: 0.076481767763397"
+[1] "glaucon: 0.275646124468374"
+[1] "polemarchus: 0.0326460198561527"
+[1] "socrates: 0.111353038828907"
+[1] "thrasymacus: 0.163542836119415"
+\end{Soutput}
+\end{Schunk}
+\caption{P-Values: Average Turn Length by Speaker}
+\label{tab:LenPval}
+\end{table}
+
+Socrates and Thrasymachus again show significantly higher standard deviations,
+owing to a greater variety in turn length. Their p-values are
+$P_{\sigma s} = 0.02$ and $P_{\sigma t} = 0.01$ (both rounded), respectively. 
+
+\begin{table}[htbp]
+\begin{Schunk}
+\begin{Soutput}
+[1] "cleitophon: 0.301818447656808"
+[1] "glaucon: 0.339266024338994"
+[1] "polemarchus: 0.187958111608137"
+[1] "socrates: 0.0175810404193463"
+[1] "thrasymacus: 0.0129304749109537"
+\end{Soutput}
+\end{Schunk}
+\caption{P-Values: Standard Deviation of Turn Length by Speaker}
+\label{tab:LSDPval}
+\end{table}
+
+The script once generates a histogram with a moving average, but now a
+resemblance to the turn density chart becomes apparent. For comparison, both
+figure \ref{graph:SentenceDensity} and the new figure \ref{graph:SentenceLength}
+are reprinted below.
+
+\begin{figure}[htbp]
+\includegraphics{GreatFlood-Turn_Length}
+\caption{Sentence Length by Speaker (Above) and Figure \ref{graph:SentenceDensity}. (Below)}
+\label{graph:SentenceLength}
+\end{figure}
 
 \end{document}

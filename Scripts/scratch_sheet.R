@@ -40,3 +40,33 @@ ggplot() +
   ylab("Length/Density")
 
 
+# Trying to get avg sentiment per sentence
+
+# Disecting turn length to find a point where I can hijack it and make it
+# an average sentiment count
+
+unnested_dialogue %>%
+  count(reorder(turn, index), speaker, sort = FALSE)
+
+# It's tallying values, now we just need to swap it to either a sum or an avg
+unnested_dialogue %>%
+  inner_join(get_sentiments("afinn")) %>%
+  add_count(value, turn, sort = F)
+
+# Counts but also reorders
+unnested_dialogue%>%
+  inner_join(get_sentiments("afinn")) %>%
+  group_by(turn) %>%
+  summarise_at(vars(value), list(name = mean))
+
+
+unnested_dialogue%>%
+  inner_join(get_sentiments("afinn")) %>%
+  group_by(turn) %>%
+  write.xlsx("republic_afinn.xlsx")
+
+unnested_dialogue %>%
+  distinct(speaker, turn)
+
+distinct(unnested_dialogue, speaker, turn)
+

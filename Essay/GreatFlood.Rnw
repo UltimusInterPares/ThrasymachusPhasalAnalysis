@@ -48,6 +48,7 @@ library(dplyr) #Data manipulation
 library(readxl) #Importing .xml's
 library(janitor) #Cleaning data frames
 library(textdata) #Access the AFINN sentiment dictionary
+library(patchwork) #Free faceting of figures
 @
 
 <<Importing, echo = F>>=
@@ -71,15 +72,13 @@ cbPalette <- c("#999999", "#E69F00", "#F0E442", "#009E73", "#56B4E9", "#0072B2",
 
 <<Function Definition, echo = F>>=
 ### Functions ------------------------------------------------------------------
-# mode: used in gathering initial data
-mode = function(input){
-  return(sort(-table(input))[1])
-}
-
 find_mode <- function(x) {
   u <- unique(x)
   tab <- tabulate(match(x, u))
-  u[tab == max(tab)]
+  
+  if (length(u[tab == max(tab)]) > 1) {NA}
+  else {u[tab == max(tab)]}
+  
 }
 @
 
@@ -91,7 +90,7 @@ find_mode <- function(x) {
 
 \section{Sentences per Turn (Turn Density)}
 
-<<Consecutive Sentences, echo = F>>=
+<<Turn Density, echo = F>>=
 ### CONSECUTIVE SENTENCES ------------------------------------------------------
 # Consecutive Sentences by Turn
 republic_turn_conseq <- nested_dialogue %>% 
@@ -172,7 +171,7 @@ represents the middle value when the data is organized numerically, and the mode
 represents the middle value when organized. The standard deviation represents
 the overall variation within the data. The table is printed below.
 
-\begin{table}
+\begin{table}[htbp]
 <<dot, echo = F>>=
 print(dot)
 @
@@ -190,7 +189,7 @@ p-value for each speaker. For the purposes of this study, if a p-value is less
 than 0.05, then the difference between the speaker's mean and the global mean
 are significantly different. The results of the test are printed below.
 
-\begin{table}
+\begin{table}[htbp]
 <<T Test (Avg), echo = F>>=
 for (i in c(2:6)) {
   val <- t.test(c(dot$mean[1], dot$mean[i]))$p.value
@@ -202,7 +201,7 @@ for (i in c(2:6)) {
 \label{tab:DensityPval}
 \end{table}
 
-Interestingly, Only Polemarchus shows a statistically significant deviation from
+Interestingly, only Polemarchus shows a statistically significant deviation from
 the global mean. In Polemarchus' case, the small sample size may skew the data.
 Polemarchus only has four turns in the entire dialogue. His third turn (P3) is
 three sentences long, P2 is two sentences long, and P1 and P4 are both one
@@ -214,7 +213,7 @@ The x-axis represents the index — a number identifying each turn in the data
 set — and the y-axis represents the number of sentences in each turn. The blue
 line represents the global mean density over time.
 
-\begin{figure}
+\begin{figure}[htbp]
 <<Turn_Conseq, echo = F, fig = T>>=
 print(turn_conseq)
 @
@@ -241,10 +240,153 @@ for (i in c(2:6)) {
 }
 @
 \caption{P-Values: Standard Deviation of Turn Density by Speaker}
-\label{tab:SDPval}
+\label{tab:DSDPval}
 \end{table}
 
 \section{Words per Turn (Turn Length)}
 
+<<Turn Length, echo = F>>=
+### TURN LENGTHS ---------------------------------------------------------------
+# Turn and Sentence Length
+# count() is essentially group_by(a, b) %>% summarise(n = n())
+# summarise truncates and sorts
+# add_count() swaps summarise for mutate, which does neither
+# add_count() %>% distinct effectively truncates without resorting
+# also adding an index
+
+# Length of Turn by Words
+republic_turn_length <- unnested_dialogue %>%
+  count(reorder(turn, index), speaker, sort = FALSE)
+republic_turn_length <- republic_turn_length  %>%
+  add_column(index = c(1:nrow(republic_turn_length)),
+             .before = "reorder(turn, index)")
+
+names(republic_turn_length) <- c("index", "turn", "speaker", "length (words)") %>%
+  make_clean_names()
+
+republic_turn_length <- republic_turn_length %>% #reorder to match sentence length
+  relocate("speaker", .before = "turn")
+
+# Gather turn Data
+cleitophon_length <- republic_turn_length %>%
+  filter(str_detect(speaker, "Cleitophon") == T)
+glaucon_length <- republic_turn_length %>%
+  filter(str_detect(speaker, "Glaucon") == T)
+polemarchus_length <- republic_turn_length %>%
+  filter(str_detect(speaker, "Polemarchus") == T)
+socrates_length <- republic_turn_length %>%
+  filter(str_detect(speaker, "Socrates") == T)
+thrasymachus_length <- republic_turn_length %>%
+  filter(str_detect(speaker, "Thrasymachus") == T)
+
+lot <- tibble(
+  speaker = c("global", "cleitophon", "glaucon", "polemarchus", "socrates", "thrasymacus"),
+  mean = c(mean(republic_turn_length$length_words),
+           mean(cleitophon_length$length_words),
+           mean(glaucon_length$length_words),
+           mean(polemarchus_length$length_words),
+           mean(socrates_length$length_words),
+           mean(thrasymachus_length$length_words)),
+  median = c(median(republic_turn_length$length_words),
+             median(cleitophon_length$length_words),
+             median(glaucon_length$length_words),
+             median(polemarchus_length$length_words),
+             median(socrates_length$length_words),
+             median(thrasymachus_length$length_words)),
+  mode = c(find_mode(republic_turn_length$length_words),
+           find_mode(cleitophon_length$length_words),
+           find_mode(glaucon_length$length_words),
+           find_mode(polemarchus_length$length_words),
+           find_mode(socrates_length$length_words),
+           find_mode(thrasymachus_length$length_words)),
+  sd = c(sd(republic_turn_length$length_words),
+         sd(cleitophon_length$length_words),
+         sd(glaucon_length$length_words),
+         sd(polemarchus_length$length_words),
+         sd(socrates_length$length_words),
+         sd(thrasymachus_length$length_words))
+)
+
+rm(cleitophon_length,
+   glaucon_length,
+   polemarchus_length,
+   socrates_length,
+   thrasymachus_length)
+
+# Global Sentence Length Bar Plot - - - - - - - - - - - - - - - - - - - - - - -
+# makes a stacked bar plot of turn lengths
+# stacks of sentences by length
+# Really kills two birds with one stone, but it's a bit informationally dense
+# changed republic_sentence_length to " "_turn_" " to clean it up
+# changed color and _color_ to fill and _fill_
+turn_length <- republic_turn_length %>%
+  ggplot() +
+  scale_fill_manual(values=cbPalette) +
+  geom_bar(mapping = aes(x=index, y=length_words, fill = speaker), stat = "identity") + # prevents geom_bar() from reorganizing
+  geom_smooth(mapping = aes(x=index, y=length_words), se = F, method = "loess") +
+  theme(axis.text.x = element_text(angle = 90)) +
+  xlab("Turn (Index)") +
+  ylab("Words")
+@
+
+The second part of the script follows the same pattern as the first, but now
+tallies the number of words per turn, hoping to establish a correlation between
+turn ``length'' and phase transitions.
+
+Once again, the results are relatively consistent. Polemarchus, with his small
+sample size, shows a statistically significant increase in words per turn,
+giving him a noticeably high average turn length. However, when subject to a
+t-test, the other interlocutors show p-values much higher than 0.05, indicating
+that their averages are not statistically significant.
+
+\begin{table}[htbp]
+<<dot, echo = F>>=
+print(lot)
+@
+\caption{Turn Length Data}
+\label{tab:LengthData}
+\end{table}
+
+\begin{table}[htbp]
+<<Len T Test (Avg), echo = F>>=
+# Quick p-values of means
+for (i in c(2:6)) {
+  val <- t.test(c(lot$mean[1], lot$mean[i]))$p.value
+  paste(lot$speaker[i], val, sep = ": ") %>%
+    print()
+}
+@
+\caption{P-Values: Average Turn Length by Speaker}
+\label{tab:LenPval}
+\end{table}
+
+Socrates and Thrasymachus again show significantly higher standard deviations,
+owing to a greater variety in turn length. Their p-values are
+$P_{\sigma s} = 0.02$ and $P_{\sigma t} = 0.01$ (both rounded), respectively. 
+
+\begin{table}[htbp]
+<<Len T Test (SD), echo = F>>=
+for (i in c(2:6)) {
+  val <- t.test(c(dot$sd[1], dot$sd[i]))$p.value
+  paste(dot$speaker[i], val, sep = ": ") %>%
+    print()
+}
+@
+\caption{P-Values: Standard Deviation of Turn Length by Speaker}
+\label{tab:LSDPval}
+\end{table}
+
+The script once generates a histogram with a moving average, but now a
+resemblance to the turn density chart becomes apparent. For comparison, both
+figure \ref{graph:SentenceDensity} and the new figure \ref{graph:SentenceLength}
+are reprinted below.
+
+\begin{figure}[htbp]
+<<Turn_Length, echo = F, fig = T>>=
+print(turn_length / turn_conseq)
+@
+\caption{Sentence Length by Speaker (Above) and Figure \ref{graph:SentenceDensity}. (Below)}
+\label{graph:SentenceLength}
+\end{figure}
 
 \end{document}
