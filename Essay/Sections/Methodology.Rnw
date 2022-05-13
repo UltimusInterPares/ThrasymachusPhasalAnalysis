@@ -12,19 +12,19 @@ name: \textel{θρασύ-μαχ-ο-ς}: bold-in-battle. (Brill, SV \textel{θρ�
 prepares the audience for the rough treatment to come.
 
 Deeper characterizations abound. ``Give an answer yourself, and tell us what you
-say the just is,'' he demands of Socrates. ``And don't tell me it's the right,
-the beneficial, the profitable, the gainful or the advantageous, but tell me
-clearly and exactly what you mean; for I won't accept such nonsense from you.''
-(336 c4-d3) He cannot resist mockery and derision even in his most reasonable
-requests. He knows the correct answer — his correct answer — and all else is so
-much nonsense.
+say the just is,'' Thrasymachus demands of Socrates. ``And don't tell me it's
+the right, the beneficial, the profitable, the gainful or the advantageous, but
+tell me clearly and exactly what you mean; for I won't accept such nonsense from
+you.'' (336 c4-d3) He cannot resist mockery and derision even in his most
+reasonable requests. Thrasymachus knows the correct answer — his correct answer
+— and all else is so much nonsense.
 
 Socrates, for his part, replies with his fateful sarcasm as Thrasymachus 
-resses him for an answer. When Thrasymachus, gloating, accuses Socrates of being
-deceitful (337 a3, a5) and claims to have foretold such an occasion, Socrates
-cedes this conflict, but only with a barb meant to draw Thrasymachus into the
-dialectic. ``That's because you're a clever fellow, Thrasymachus.'' (337 a7)
-One must, of course, never assume themselves clever around Socrates.
+presses him for an answer. When Thrasymachus, gloating, accuses Socrates of
+being deceitful (337 a3, a5) and claims to have foretold such an occasion,
+Socrates cedes this conflict, but only with a barb meant to draw Thrasymachus
+into the dialectic. ``That's because you're a clever fellow, Thrasymachus.''
+(337 a7) One must, of course, never assume themselves clever around Socrates.
 
 \vspace*{1\baselineskip}
 \noindent There are means of deepening this sort of analysis. By examining
@@ -33,13 +33,13 @@ arrangement, and length of sentence, among others —  emergent patterns are mad
 to reveal themselves. These patterns recontextualize the piece, demarcating
 interwoven segments called phases.
 
-This study will follow the dialogue as presented, with all narrative elements
-removed. The piece is framed as a direct quote from Socrates as he retells a
+The piece is framed as a direct quote from Socrates as he retells a
 previous conversation and so includes occasional narrative asides meant to
 guide the reader. These include shorter phrases such as ``he said'' and ``he
 replied,'' as well as lengthier elements, such as the description of
 Thrasymachus blushing. While certainly part of a higher-level discourse, they
-impede any discourse analysis and so are removed from the data.
+impede any discourse analysis and so are removed from the data.The remaining 301
+turns in the conversation make up the core data set.
 
 Five individuals participate in this dialogue: Cleitophon, Glaucon, Polemarchus,
 Socrates, and Thrasymachus. The speakers typically take turns speaking with
@@ -48,22 +48,23 @@ Cleitophon and Polemarchus as they attempt to pin down the specific meaning of
 Thrasymachus' stance on the nature of justice (340 a1 - 340 b9), which Socrates
 quickly stops. Glaucon also enters the conversation at two points, once
 addressing Thrasymachus in support of Socrates (337 d7 - d8) and later asking
-Socrates for clarification on a point (347 a7 - 348 b6). These asides have
-little impact on the dialogue, but they are undeniably a part of it and are
-retained in the data.
+Socrates for clarification on a point (347 a7 - 348 b6). These asides are brief
+as a rule, but they are undeniably a part of the dialogue and are retained in
+the data.
 
 Whenever a sentence is quoted directly, it will be presented in a specific
 notation from this point on. First will come the Stephanus Pagination. Second
 will come a token specifying the speaker and the turn. For example, Glaucon's
 first turn will have the token G1, his second G2. Third will come a letter
-indicating the sentence in the turn. For example, the first sentence will be
+indicating the sentence in the turn. The first sentence will be
 labeled a./, the second b./, and so on. Last will come the text. To exemplify,
 Socrates' seventh turn in the conversation reads as follows.
 
-\vspace*{1\baselineskip}
+\begin{quote}
 337 d2-d4, S7 a./ What else than the appropriate penalty for one who doesn't
-know, namely, to learn from the one who does know? b./ Therefore, that's what I deserve.
-\vspace*{1\baselineskip}
+know, namely, to learn from the one who does know? b./ Therefore, that's what
+I deserve.
+\end{quote}
 
 This study will use the programming language R to analyze three key markers:
 the number of words in each turn, the number of sentences in each turn, and the
@@ -122,4 +123,13 @@ in and out of phases. However, using the AFINN lexicon does require compromise.
 Finn Årup Nielsen designed it for analyzing the sentiment of microblogs, and the
 sentiment scores are specifically tailored for Twitter. Any sentiment analysis
 undertaken will have a modern colloquial underpinning, and the analysis will
-specifically represent a 21st-century reading of the text.
+specifically represent a 21st-century reading of the text. Furthermore, the
+lexicon excludes more words than are in the list of stop words used for this
+study.
+
+Consequently, the analysis output will necessarily be shorter than the input, 
+ith gaps in the results. Despite this, the AFINN lexicon fits this study better
+than the alternatives. The continuous range of scores offers more flexibility
+than the binary options of the Bing and Loughran lexicons. The NRC lexicon,
+while more specific, does not output a usable quantitative variable, whereas the
+AFINN scores will readily function variables in statistical tests.

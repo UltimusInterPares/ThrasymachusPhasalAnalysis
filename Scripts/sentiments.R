@@ -54,18 +54,6 @@ sot <- tibble(
            mean(polemarchus_sen$avg_sen),
            mean(socrates_sen$avg_sen),
            mean(thrasymachus_sen$avg_sen)),
-  median = c(median(republic_afinn$avg_sen),
-             median(cleitophon_sen$avg_sen),
-             median(glaucon_sen$avg_sen),
-             median(polemarchus_sen$avg_sen),
-             median(socrates_sen$avg_sen),
-             median(thrasymachus_sen$avg_sen)),
-  mode = c(find_mode(republic_afinn$avg_sen),
-           find_mode(cleitophon_sen$avg_sen),
-           find_mode(glaucon_sen$avg_sen),
-           find_mode(polemarchus_sen$avg_sen),
-           find_mode(socrates_sen$avg_sen),
-           find_mode(thrasymachus_sen$avg_sen)),
   sd = c(sd(republic_afinn$avg_sen),
          sd(cleitophon_sen$avg_sen),
          sd(glaucon_sen$avg_sen),
@@ -74,26 +62,30 @@ sot <- tibble(
          sd(thrasymachus_sen$avg_sen))
 )
 
+### Statistical Tests ----------------------------------------------------------
+sentiment_t <- c(#t.test(x = cleitophon_sen$avg_sen, mu = mean(republic_afinn$avg_sen), alternative = "two.sided", conf.level = 0.95)$p.value,
+               t.test(x = glaucon_sen$avg_sen, mu = mean(republic_afinn$avg_sen), alternative = "two.sided", conf.level = 0.95)$p.value,
+               t.test(x = polemarchus_sen$avg_sen, mu = mean(republic_afinn$avg_sen), alternative = "two.sided", conf.level = 0.95)$p.value,
+               t.test(x = socrates_sen$avg_sen, mu = mean(republic_afinn$avg_sen), alternative = "two.sided", conf.level = 0.95)$p.value,
+               t.test(x = thrasymachus_sen$avg_sen, mu = mean(republic_afinn$avg_sen), alternative = "two.sided", conf.level = 0.95)$p.value)
+
+sentiment_f <- c(#var.test(x = cleitophon_sen$avg_sen, y = (republic_afinn$avg_sen), alternative = "two.sided", conf.level = 0.95)$p.value,
+               var.test(x = glaucon_sen$avg_sen, y = (republic_afinn$avg_sen), alternative = "two.sided", conf.level = 0.95)$p.value,
+               var.test(x = polemarchus_sen$avg_sen, y = (republic_afinn$avg_sen), alternative = "two.sided", conf.level = 0.95)$p.value,
+               var.test(x = socrates_sen$avg_sen, y = (republic_afinn$avg_sen), alternative = "two.sided", conf.level = 0.95)$p.value,
+               var.test(x = thrasymachus_sen$avg_sen, y = (republic_afinn$avg_sen), alternative = "two.sided", conf.level = 0.95)$p.value)
+
+sot <- sot %>%
+  add_column(p_mean = c(NA, NA, sentiment_t), .after = "mean") %>%
+  add_column(p_sd = c(NA, NA, sentiment_f), .after = "sd")
+
 rm(cleitophon_sen,
    glaucon_sen,
    polemarchus_sen,
    socrates_sen,
-   thrasymachus_sen)
-
-# T Tests ----------------------------------------------------------------------
-# Quick p-values of means
-for (i in c(2:6)) {
-  val <- t.test(c(sot$mean[1], sot$mean[i]))$p.value
-  paste(sot$speaker[i], val, sep = ": ") %>%
-    print()
-}
-
-# # Quick p-values of standard deviations
-# for (i in c(2:6)) {
-#   val <- t.test(c(sot$sd[1], sot$sd[i]))$p.value
-#   paste(sot$speaker[i], val, sep = ": ") %>%
-#     print()
-# }
+   thrasymachus_sen,
+   sentiment_t,
+   sentiment_f)
 
 ### CHARTS ---------------------------------------------------------------------
 turn_sen <- republic_afinn %>%
@@ -101,10 +93,17 @@ turn_sen <- republic_afinn %>%
   scale_fill_manual(values=cbPalette) +
   geom_bar(mapping = aes(x=index, y=avg_sen, fill = speaker), stat = "identity") + # prevents geom_bar() from reorganizing
   geom_smooth(mapping = aes(x=index, y=avg_sen), se = F, method = "loess") +
-  theme(axis.text.x = element_text(angle = 90)) +
-  xlab("Key") +
+  theme(axis.text.x = element_text(angle = 90),
+        legend.position = "bottom") +
+  xlab("Index (Turn)") +
   ylab("Avg Sentiment")
 
-republic_afinn %>%
-  ggplot(mapping = aes(x=index, y=avg_sen)) +
-  geom_line()
+### WHAT AFINN LOOSES ----------------------------------------------------------
+afinn_loss <- select(republic_turn_conseq, -n) %>%
+  filter((turn %in% republic_afinn$turn) == FALSE)
+
+# Calculate Population Variance from Sample (Statology)
+n <- length(republic_afinn$avg_sen)
+pop_var <- var(republic_afinn$avg_sen) * (n-1)/n
+afinn_var <- var(republic_afinn$avg_sen)
+

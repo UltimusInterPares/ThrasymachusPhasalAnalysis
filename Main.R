@@ -12,17 +12,6 @@ library(patchwork) #Free faceting of figures
 library(openxlsx) #Writing excel sheets
 
 ### Functions ------------------------------------------------------------------
-# mode: used in gathering initial data
-# mode = function(input){
-#   return(sort(-table(input))[1])
-# }
-# 
-# find_mode <- function(x) {
-#   u <- unique(x)
-#   tab <- tabulate(match(x, u))
-#   u[tab == max(tab)]
-# }
-
 find_mode <- function(x) {
   u <- unique(x)
   tab <- tabulate(match(x, u))
@@ -32,13 +21,15 @@ find_mode <- function(x) {
   
 }
 
+### Global Variables -----------------------------------------------------------
+speaker = c("global", "cleitophon", "glaucon", "polemarchus", "socrates", "thrasymacus")
+
 ### IMPORTING DATA -------------------------------------------------------------
 source("Scripts/importing.R")
 
 ### LENGTHS --------------------------------------------------------------------
 source("Scripts/turn_conseq.R")  # Sentences per Turn
-source("Scripts/turn_lengths.R") # Words per Turn (+ per Sentences)
-source("Scripts/indexing.R")
+source("Scripts/turn_lengths.R") # Words per Turn
 
 ### SENTIMENTS -----------------------------------------------------------------
 source("Scripts/sentiments.R")   # Sentiments per Turn

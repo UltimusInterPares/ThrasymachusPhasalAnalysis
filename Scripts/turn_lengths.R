@@ -1,5 +1,5 @@
 ### TURN LENGTHS ---------------------------------------------------------------
-# Turn and Sentence Length
+# Turn Length
 # count() is essentially group_by(a, b) %>% summarise(n = n())
 # summarise truncates and sorts
 # add_count() swaps summarise for mutate, which does neither
@@ -39,18 +39,6 @@ lot <- tibble(
            mean(polemarchus_length$length_words),
            mean(socrates_length$length_words),
            mean(thrasymachus_length$length_words)),
-  median = c(median(republic_turn_length$length_words),
-             median(cleitophon_length$length_words),
-             median(glaucon_length$length_words),
-             median(polemarchus_length$length_words),
-             median(socrates_length$length_words),
-             median(thrasymachus_length$length_words)),
-  mode = c(find_mode(republic_turn_length$length_words),
-           find_mode(cleitophon_length$length_words),
-           find_mode(glaucon_length$length_words),
-           find_mode(polemarchus_length$length_words),
-           find_mode(socrates_length$length_words),
-           find_mode(thrasymachus_length$length_words)),
   sd = c(sd(republic_turn_length$length_words),
          sd(cleitophon_length$length_words),
          sd(glaucon_length$length_words),
@@ -58,6 +46,25 @@ lot <- tibble(
          sd(socrates_length$length_words),
          sd(thrasymachus_length$length_words))
 )
+
+### Statistical Tests ----------------------------------------------------------
+length_tests <- tibble(speaker = speaker[2:6])
+
+length_t <- c(t.test(x = cleitophon_length$length_words, mu = mean(republic_turn_length$length_words), alternative = "two.sided", conf.level = 0.95)$p.value,
+              t.test(x = glaucon_length$length_words, mu = mean(republic_turn_length$length_words), alternative = "two.sided", conf.level = 0.95)$p.value,
+              t.test(x = polemarchus_length$length_words, mu = mean(republic_turn_length$length_words), alternative = "two.sided", conf.level = 0.95)$p.value,
+              t.test(x = socrates_length$length_words, mu = mean(republic_turn_length$length_words), alternative = "two.sided", conf.level = 0.95)$p.value,
+              t.test(x = thrasymachus_length$length_words, mu = mean(republic_turn_length$length_words), alternative = "two.sided", conf.level = 0.95)$p.value)
+
+length_f <- c(var.test(x = cleitophon_length$length_words, y = (republic_turn_length$length_words), alternative = "two.sided", conf.level = 0.95)$p.value,
+              var.test(x = glaucon_length$length_words, y = (republic_turn_length$length_words), alternative = "two.sided", conf.level = 0.95)$p.value,
+              var.test(x = polemarchus_length$length_words, y = (republic_turn_length$length_words), alternative = "two.sided", conf.level = 0.95)$p.value,
+              var.test(x = socrates_length$length_words, y = (republic_turn_length$length_words), alternative = "two.sided", conf.level = 0.95)$p.value,
+              var.test(x = thrasymachus_length$length_words, y = (republic_turn_length$length_words), alternative = "two.sided", conf.level = 0.95)$p.value)
+
+lot <- lot %>%
+  add_column(p_mean = c(NA, length_t), .after = "mean") %>%
+  add_column(p_sd = c(NA, length_f), .after = "sd")
 
 rm(cleitophon_length,
    glaucon_length,
@@ -76,33 +83,37 @@ turn_length <- republic_turn_length %>%
   scale_fill_manual(values=cbPalette) +
   geom_bar(mapping = aes(x=index, y=length_words, fill = speaker), stat = "identity") + # prevents geom_bar() from reorganizing
   geom_smooth(mapping = aes(x=index, y=length_words), se = F, method = "loess") +
-  theme(axis.text.x = element_text(angle = 90)) +
+  theme(axis.text.x = element_text(angle = 90),
+        legend.position = "bottom") +
   xlab("Turn (Index)") +
   ylab("Words")
 
-# T Tests ----------------------------------------------------------------------
-# Quick p-values of means
-for (i in c(2:6)) {
-  val <- t.test(c(lot$mean[1], lot$mean[i]))$p.value
-  paste(lot$speaker[i], val, sep = ": ") %>%
-    print()
-}
+p1_length <- republic_turn_length[c(1:150),] %>%
+  ggplot() +
+  scale_fill_manual(values=cbPalette) +
+  geom_bar(mapping = aes(x=index, y=length_words, fill = speaker), stat = "identity") +
+  theme(axis.text.x = element_text(angle = 90),
+        legend.position = "bottom") +
+  xlab("Turn") +
+  ylab("Length (Words)")
 
-# Quick p-values of standard deviations
-for (i in c(2:6)) {
-  val <- t.test(c(dot$sd[1], dot$sd[i]))$p.value
-  paste(dot$speaker[i], val, sep = ": ") %>%
-    print()
-}
+# # t-test
+# t.test(x = cleitophon_conseq$n,
+#        mu = mean(republic_turn_conseq$n),
+#        alternative = "two.sided",
+#        conf.level = 0.95)
+# 
+# # F-test
+# var.test(x = cleitophon_conseq$n,
+#          y = (republic_turn_conseq$n),
+#          alternative = "two.sided",
+#          conf.level = 0.95)
 
-# P values for each individual turn.
-length_p <- c()
-for (i in c(1:nrow(republic_turn_length))) {
-  length_p[i] <- t.test(c(dot$mean[1], republic_turn_length$length_words[i]))$p.value
-}
-
-republic_turn_length_p <- republic_turn_length %>%
-  add_column(p_val = conseq_p, .after = "length_words")
+# rm(cleitophon_conseq,
+#    glaucon_conseq,
+#    polemarchus_conseq,
+#    socrates_conseq,
+#    thrasymachus_conseq)
 
 # sen_sentiment_bar <- republic_afinn %>%
 #   filter(str_detect(speaker, "(Socrates|Thrasymachus)") == T) %>%
@@ -114,12 +125,4 @@ republic_turn_length_p <- republic_turn_length %>%
 #   theme(axis.text.x=element_text(angle=90)) +
 #   xlab("Word") +
 #   ylab("Sentiment")
-
-
-ggplot() +
-  geom_line(data = republic_turn_length, mapping = aes(x=index, y=length_words), color = cbPalette[5], stat = "identity") + # prevents geom_bar() from reorganizing
-  geom_bar(data = republic_turn_conseq, mapping = aes(x=index, y=n), fill = cbPalette[2], stat = "identity") + # prevents geom_bar() from reorganizing
-  theme(axis.text.x = element_text(angle = 90)) +
-  xlab("Turn (Index)") +
-  ylab("Words")
 

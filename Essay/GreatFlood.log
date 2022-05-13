@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.9.5)  26 APR 2022 18:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.9.5)  12 MAY 2022 20:37
 entering extended mode
 **./GreatFlood.tex
 (GreatFlood.tex
@@ -1089,9 +1089,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 \openout3 = `GreatFlood.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'GreatFlood.bbl' not found.
-
-No file GreatFlood.bbl.
+Package biblatex Info: ... file 'GreatFlood.bbl' found.
+ (GreatFlood.bbl)
 Package biblatex Info: Reference section=0 on input line 41.
 Package biblatex Info: Reference segment=0 on input line 41.
 LaTeX Info: Redefining \microtypecontext on input line 41.
@@ -1139,41 +1138,46 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 LaTeX Info: Redefining \dots on input line 41.
  (GreatFlood-concordance.tex)
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 48.
+(Font)              <6> on input line 49.
 LaTeX Font Info:    Trying to load font information for TS1+aer on input line 4
-8.
+9.
 
 (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <8> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 48.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 48.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 49.
 
 [1
 
 {/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/data/pdftex/
-config/pdftex.map}] (Sections/Methodology.Rnw
-LaTeX Font Info:    Trying to load font information for LGR+aer on input line 1
-0.
-LaTeX Font Info:    No file LGRaer.fd. on input line 10.
+config/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for LGR+aer on input line 5
+9.
+LaTeX Font Info:    No file LGRaer.fd. on input line 59.
 
 
 LaTeX Font Warning: Font shape `LGR/aer/m/n' undefined
-(Font)              using `LGR/cmr/m/n' instead on input line 10.
+(Font)              using `LGR/cmr/m/n' instead on input line 59.
 
-LaTeX Font Info:    Trying to load font information for OT1+aer on input line 1
-1.
+LaTeX Font Info:    Trying to load font information for OT1+aer on input line 6
+0.
 
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /latex/ae/ot1aer.fd"
 File: ot1aer.fd 1997/11/16 Font definitions for OT1/aer.
 ) [1
 
-] [2] [3] [4])
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 7
-0.
+] [2] [3] [4] [5]
+
+LaTeX Font Warning: Font shape `LGR/aer/m/it' undefined
+(Font)              using `LGR/aer/m/n' instead
+(Font)              for symbol `textalpha' on input line 192.
+
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 1
+96.
 
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /latex/ae/t1aett.fd"
@@ -1184,38 +1188,56 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for TS1+aett on input line 
-71.
+201.
 
 (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/ts1aett.fd
 File: ts1aett.fd 
 )
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-71.
+201.
 
 ("/Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/tex
 /latex/base/ts1cmtt.fd"
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `TS1/aett/m/n' in size <12> not available
-(Font)              Font shape `TS1/cmtt/m/n' tried instead on input line 71.
+(Font)              Font shape `TS1/cmtt/m/n' tried instead on input line 201.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [5]
-<GreatFlood-Turn_Conseq.pdf, id=30, 433.62pt x 433.62pt>
-File: GreatFlood-Turn_Conseq.pdf Graphic file (type pdf)
-<use GreatFlood-Turn_Conseq.pdf>
-Package pdftex.def Info: GreatFlood-Turn_Conseq.pdf  used on input line 123.
+<GreatFlood-Figure: Turn Conseq.pdf, id=32, 433.62pt x 433.62pt>
+File: GreatFlood-Figure: Turn Conseq.pdf Graphic file (type pdf)
+<use GreatFlood-Figure: Turn Conseq.pdf>
+Package pdftex.def Info: GreatFlood-Figure: Turn Conseq.pdf  used on input line
+ 219.
 (pdftex.def)             Requested size: 375.80544pt x 375.8238pt.
- [6] [7 <./GreatFlood-Turn_Conseq.pdf>] [8]
-<GreatFlood-Turn_Length.pdf, id=48, 433.62pt x 433.62pt>
-File: GreatFlood-Turn_Length.pdf Graphic file (type pdf)
-<use GreatFlood-Turn_Length.pdf>
-Package pdftex.def Info: GreatFlood-Turn_Length.pdf  used on input line 220.
+ [6]
+<GreatFlood-Figure: Turn Len.pdf, id=38, 433.62pt x 433.62pt>
+File: GreatFlood-Figure: Turn Len.pdf Graphic file (type pdf)
+<use GreatFlood-Figure: Turn Len.pdf>
+Package pdftex.def Info: GreatFlood-Figure: Turn Len.pdf  used on input line 24
+5.
 (pdftex.def)             Requested size: 375.80544pt x 375.8238pt.
+ [7] [8 <./GreatFlood-Figure: Turn Conseq.pdf>]
+[9 <./GreatFlood-Figure: Turn Len.pdf>] [10] [11]
+<GreatFlood-Figure: Turn Sen.pdf, id=65, 433.62pt x 433.62pt>
+File: GreatFlood-Figure: Turn Sen.pdf Graphic file (type pdf)
+<use GreatFlood-Figure: Turn Sen.pdf>
+Package pdftex.def Info: GreatFlood-Figure: Turn Sen.pdf  used on input line 30
+4.
+(pdftex.def)             Requested size: 375.80544pt x 375.8238pt.
+ [12] [13 <./GreatFlood-Figure: Turn Sen.pdf>] [14]
+<GreatFlood-Fig: P1 Lengths.pdf, id=81, 433.62pt x 433.62pt>
+File: GreatFlood-Fig: P1 Lengths.pdf Graphic file (type pdf)
+<use GreatFlood-Fig: P1 Lengths.pdf>
+Package pdftex.def Info: GreatFlood-Fig: P1 Lengths.pdf  used on input line 323
+.
+(pdftex.def)             Requested size: 375.80544pt x 375.8238pt.
+ [15] [16 <./GreatFlood-Fig: P1 Lengths.pdf>] [17]
+[18] [19] [20] [21
 
-[9] [10 <./GreatFlood-Turn_Length.pdf>] (GreatFlood.aux)
+] (GreatFlood.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1224,13 +1246,13 @@ Package logreq Info: Writing requests to 'GreatFlood.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18328 strings out of 480832
- 341737 string characters out of 2900232
- 1403793 words of memory out of 3000000
- 35369 multiletter control sequences out of 15000+600000
- 443444 words of font info for 310 fonts, out of 8000000 for 9000
+ 18781 strings out of 480832
+ 349077 string characters out of 2900232
+ 1407012 words of memory out of 3000000
+ 35633 multiletter control sequences out of 15000+600000
+ 463967 words of font info for 459 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 85i,6n,94p,745b,3824s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,6n,94p,1067b,3824s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/data/font
 s/pk/ljfour/jknappen/ec/dpi600/tctt1200.pk> </Users/thomasbroadwater/Library/Ap
 plication Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm100
@@ -1239,18 +1261,21 @@ onts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk></Users/thomasbroadwater/Library/
 Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.
 pfb></Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/
 fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/thomasbroadwater/Library/Appl
-ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 </Users/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/font
-s/type1/public/amsfonts/cm/cmr10.pfb></Users/thomasbroadwater/Library/Applicati
-on Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Use
-rs/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></Users/thomasbroadwater/Library/Application Sup
-port/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb></Users/th
-omasbroadwater/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
-blic/cbgreek/grmn1200.pfb>
-Output written on GreatFlood.pdf (11 pages, 152966 bytes).
+s/type1/public/amsfonts/cm/cmr12.pfb></Users/thomasbroadwater/Library/Applicati
+on Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></User
+s/thomasbroadwater/Library/Application Support/MiKTeX/texmfs/install/fonts/type
+1/public/amsfonts/cm/cmti10.pfb></Users/thomasbroadwater/Library/Application Su
+pport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/t
+homasbroadwater/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/p
+ublic/amsfonts/cm/cmtt12.pfb></Users/thomasbroadwater/Library/Application Suppo
+rt/MiKTeX/texmfs/install/fonts/type1/public/cbgreek/grmn1000.pfb></Users/thomas
+broadwater/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public
+/cbgreek/grmn1200.pfb>
+Output written on GreatFlood.pdf (22 pages, 225158 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 54287 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 76313 words of extra memory for PDF output out of 89155 (max. 10000000)
 
